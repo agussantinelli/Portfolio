@@ -34,13 +34,49 @@
   El propósito central de este proyecto es consolidar una página web <b>moderna, profesional y de alto rendimiento</b>. Está optimizada para funcionar como una carta de presentación impactante ante reclutadores y colaboradores dentro del ecosistema tecnológico.
 </p>
 
-<h2 align="left">🛠️ Stack Tecnológico (Planificado)</h2>
-<ul>
-  <li>📦 <b>Framework:</b> <a href="https://nextjs.org/">Next.js</a> (App Router)</li>
-  <li>🎨 <b>UI & Estilos:</b> <a href="https://mui.com/">Material UI (MUI)</a></li>
-  <li>✨ <b>Animaciones:</b> <a href="https://www.framer.com/motion/">Framer Motion</a></li>
-  <li>🚀 <b>Despliegue:</b> <a href="https://pages.github.com/">GitHub Pages</a> (Static Export)</li>
-</ul>
+<h2 align="left">🛠️ Stack Tecnológico</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Componente</th>
+            <th>Tecnología</th>
+            <th>Notas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Framework</strong></td>
+            <td>Next.js 15+ (App Router)</td>
+            <td>Generación estática (SSG) para SEO y performance.</td>
+        </tr>
+        <tr>
+            <td><strong>UI Kit</strong></td>
+            <td>Material UI (MUI) 6+</td>
+            <td>Librería de componentes profesionales y accesibles.</td>
+        </tr>
+        <tr>
+            <td><strong>Estilos</strong></td>
+            <td>Emotion / CSS Modules</td>
+            <td>Manejo de estilos basado en componentes.</td>
+        </tr>
+        <tr>
+            <td><strong>Animaciones</strong></td>
+            <td>Framer Motion</td>
+            <td>Interacciones fluidas y transiciones premium.</td>
+        </tr>
+        <tr>
+            <td><strong>Lenguaje</strong></td>
+            <td>TypeScript 5</td>
+            <td>Tipado estricto para un desarrollo más robusto.</td>
+        </tr>
+        <tr>
+            <td><strong>Despliegue</strong></td>
+            <td>GitHub Pages</td>
+            <td>Hosting estático confiable y gratuito.</td>
+        </tr>
+    </tbody>
+</table>
 
 <h2 align="left">✅ Características y Roadmap</h2>
 <ul>
