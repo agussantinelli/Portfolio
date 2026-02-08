@@ -6,8 +6,8 @@ import theme from '@/theme';
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Agus Santinelli | Portfolio",
-  description: "Desarrollador de software especializado en aplicaciones web modernas.",
+  title: "Agus Santinelli | Software Engineering Portfolio",
+  description: "Software engineering student and developer specialized in high-performance, scalable systems.",
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="en">
       <body>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>

@@ -17,23 +17,24 @@ export default function Footer() {
                     variant="body2"
                     sx={{
                         color: 'var(--color-white)',
-                        opacity: 0.5,
+                        opacity: 0.4,
                         fontWeight: 500,
                         letterSpacing: 1
                     }}
                 >
-                    Diseñado y construido por <Box component="span" sx={{ color: 'var(--color-aqua)' }}>Agus Santinelli</Box>
+                    Designed & Built by Agus Santinelli
                 </Typography>
                 <Typography
                     variant="caption"
                     sx={{
                         color: 'var(--color-white)',
-                        opacity: 0.3,
-                        mt: 2,
-                        display: 'block'
+                        opacity: 0.2,
+                        mt: 1,
+                        display: 'block',
+                        fontSize: '0.7rem'
                     }}
                 >
-                    © {new Date().getFullYear()} — Todos los derechos reservados
+                    © {new Date().getFullYear()} — Built with Next.js & MUI
                 </Typography>
             </Container>
         </Box>

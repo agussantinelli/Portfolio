@@ -5,10 +5,10 @@ import { useState, useEffect } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const navItems = [
-    { name: 'Inicio', href: '#' },
-    { name: 'Proyectos', href: '#projects' },
-    { name: 'Habilidades', href: '#skills' },
-    { name: 'Contacto', href: '#contact' },
+    { name: 'Home', href: '#' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
 ];
 
 const NavButton = ({ item, index }: { item: typeof navItems[0], index: number }) => (
@@ -124,7 +124,7 @@ export default function Navbar() {
                                     }
                                 }}
                             >
-                                CV
+                                Resume
                             </Button>
                         </motion.div>
                     </Stack>

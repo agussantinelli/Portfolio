@@ -1,5 +1,5 @@
 'use client';
-import { Box, Typography, Button, Container, Stack } from '@mui/material';
+import { Box, Typography, Button, Container, Stack, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 
 export default function Hero() {
@@ -36,100 +36,120 @@ export default function Hero() {
                     <Typography
                         variant="overline"
                         sx={{
-                            fontWeight: 600,
-                            letterSpacing: 3,
+                            fontWeight: 700,
+                            letterSpacing: 4,
                             color: 'var(--color-aqua)',
                             mb: 2,
                             display: 'block'
                         }}
                     >
-                        HOLA, MI NOMBRE ES
+                        HELLO, MY NAME IS
                     </Typography>
+
                     <Typography
                         variant="h1"
                         sx={{
                             fontSize: { xs: '3.5rem', md: '5.5rem' },
                             fontWeight: 900,
                             color: 'var(--color-white)',
-                            mb: 1,
                             lineHeight: 1.1,
+                            mb: 2,
+                            letterSpacing: '-0.02em'
                         }}
                     >
-                        Agus Santinelli.
+                        Agus Santinelli<Box component="span" sx={{ color: 'var(--color-aqua)' }}>.</Box>
                     </Typography>
+
                     <Typography
                         variant="h2"
                         sx={{
-                            fontSize: { xs: '2rem', md: '4rem' },
+                            fontSize: { xs: '1.5rem', md: '2.5rem' },
                             fontWeight: 700,
-                            color: 'var(--color-sky)',
-                            opacity: 0.8,
+                            color: 'var(--color-white)',
+                            opacity: 0.6,
                             mb: 4,
-                            lineHeight: 1.2,
+                            maxWidth: '800px'
                         }}
                     >
-                        Construyo experiencias digitales impactantes.
+                        Information Systems Engineering Student.
                     </Typography>
+
                     <Typography
                         variant="body1"
                         sx={{
+                            fontSize: { xs: '1rem', md: '1.2rem' },
                             color: 'var(--color-white)',
-                            opacity: 0.7,
-                            maxWidth: '650px',
+                            opacity: 0.8,
                             mb: 6,
-                            fontSize: '1.15rem',
+                            maxWidth: '750px',
                             lineHeight: 1.8
                         }}
                     >
-                        Soy un desarrollador de software enfocado en crear aplicaciones web modernas,
-                        escalables y con un diseño impecables. Especializado en el ecosistema de full-stack development.
+                        Passionate about <strong>software engineering</strong>, <strong>clean architectures</strong>, and data-driven applications. Specializing in transforming complex business requirements into scalable, mission-critical software. Based in Rosario, Argentina.
                     </Typography>
-                    <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
+
+                    <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mb: 8 }}>
                         <Button
                             variant="contained"
                             size="large"
+                            href="#projects"
                             sx={{
-                                px: 5,
-                                py: 2,
-                                textTransform: 'none',
-                                fontSize: '1.1rem',
                                 bgcolor: 'var(--color-aqua)',
                                 color: 'var(--color-black)',
-                                fontWeight: 700,
+                                px: 4,
+                                py: 1.5,
+                                fontWeight: 800,
                                 borderRadius: '12px',
                                 '&:hover': {
-                                    bgcolor: 'var(--color-aqua)',
-                                    boxShadow: '0 0 25px rgba(0, 255, 242, 0.4)',
-                                    transform: 'translateY(-2px)'
-                                },
-                                transition: 'all 0.3s'
+                                    bgcolor: 'var(--color-white)',
+                                    boxShadow: '0 0 20px rgba(0, 255, 242, 0.4)'
+                                }
                             }}
                         >
-                            Ver mis proyectos
+                            View Projects
                         </Button>
                         <Button
                             variant="outlined"
                             size="large"
+                            href="#contact"
                             sx={{
-                                px: 5,
-                                py: 2,
-                                textTransform: 'none',
-                                fontSize: '1.1rem',
-                                borderColor: 'rgba(255, 255, 255, 0.2)',
                                 color: 'var(--color-white)',
-                                fontWeight: 600,
+                                borderColor: 'rgba(255, 255, 255, 0.3)',
+                                px: 4,
+                                py: 1.5,
+                                fontWeight: 700,
                                 borderRadius: '12px',
                                 '&:hover': {
-                                    borderColor: 'var(--color-white)',
-                                    bgcolor: 'rgba(255, 255, 255, 0.05)',
-                                    transform: 'translateY(-2px)'
-                                },
-                                transition: 'all 0.3s'
+                                    borderColor: 'var(--color-aqua)',
+                                    color: 'var(--color-aqua)',
+                                    bgcolor: 'rgba(0, 255, 242, 0.05)'
+                                }
                             }}
                         >
-                            Contáctame
+                            Get In Touch
                         </Button>
                     </Stack>
+
+                    {/* Strategic Focus Areas */}
+                    <Grid container spacing={3} sx={{ mt: 4 }}>
+                        {[
+                            { title: 'FinTech', desc: 'Market transparency ecosystems & asset management.' },
+                            { title: 'Aca-Infrastructure', desc: 'Modernizing university management & administration.' },
+                            { title: 'Mobility & Urban', desc: 'Scalable solutions for urban flow & event ticketing.' },
+                            { title: 'Business Logic', desc: 'Efficient platforms for retail & social funding.' }
+                        ].map((focus, i) => (
+                            <Grid item xs={6} md={3} key={i}>
+                                <Box sx={{ p: 2, borderLeft: '2px solid rgba(0, 255, 242, 0.3)', bgcolor: 'rgba(255, 255, 255, 0.02)' }}>
+                                    <Typography variant="subtitle2" sx={{ color: 'var(--color-aqua)', fontWeight: 800, mb: 0.5 }}>
+                                        {focus.title}
+                                    </Typography>
+                                    <Typography variant="caption" sx={{ color: 'var(--color-white)', opacity: 0.5 }}>
+                                        {focus.desc}
+                                    </Typography>
+                                </Box>
+                            </Grid>
+                        ))}
+                    </Grid>
                 </motion.div>
             </Container>
         </Box>

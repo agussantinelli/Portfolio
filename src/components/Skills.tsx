@@ -3,10 +3,22 @@ import { Box, Container, Typography, Grid, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 
 const skills = [
-    { category: 'Lenguajes', items: ['JavaScript', 'TypeScript', 'Java', 'Python', 'SQL', 'HTML/CSS'] },
-    { category: 'Frontend', items: ['React', 'Next.js', 'Angular', 'Material UI', 'Tailwind CSS', 'Framer Motion'] },
-    { category: 'Backend', items: ['Node.js', 'Spring Boot', 'Express', 'Django', 'PostgreSQL', 'MongoDB'] },
-    { category: 'Herramientas', items: ['Git', 'Docker', 'Firebase', 'GitHub Actions', 'Vercel'] },
+    {
+        category: 'Lenguajes',
+        items: ['TypeScript', 'JavaScript', 'C#', 'Java', 'SQL', 'HTML', 'CSS']
+    },
+    {
+        category: 'Backend & APIs',
+        items: ['Node.js (Express)', 'ASP.NET Core', 'Spring Boot', 'Jakarta EE', 'Clean Architecture', 'DTOs']
+    },
+    {
+        category: 'Frontend & Mobile',
+        items: ['React', 'Next.js', 'Angular', 'Astro', 'React Native', 'Blazor WASM', 'Tailwind CSS', 'Material UI']
+    },
+    {
+        category: 'Databases & Tools',
+        items: ['PostgreSQL', 'SQL Server', 'MySQL', 'Prisma', 'Hibernate', 'ES Core', 'Git', 'Maven']
+    }
 ];
 
 export default function Skills() {
@@ -23,7 +35,7 @@ export default function Skills() {
                         '& span': { color: 'var(--color-aqua)' }
                     }}
                 >
-                    Habilidades <span>&</span> Tecnologías
+                    Skills <span>&</span> Technologies
                 </Typography>
                 <Grid container spacing={3}>
                     {skills.map((skillGroup, index) => (
