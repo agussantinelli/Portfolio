@@ -14,11 +14,11 @@ const skills = [
     },
     {
         category: 'Frontend & Mobile',
-        items: ['React', 'Next.js', 'Angular', 'Astro', 'React Native', 'Blazor WASM', 'Tailwind CSS', 'Material UI']
+        items: ['React', 'Next.js', 'Angular', 'Astro', 'React Native', 'Blazor WASM', 'Material UI']
     },
     {
         category: 'Databases & Tools',
-        items: ['PostgreSQL', 'SQL Server', 'MySQL', 'Prisma', 'Hibernate', 'ES Core', 'Git', 'Maven']
+        items: ['PostgreSQL', 'SQL Server', 'MySQL', 'Prisma', 'Hibernate', 'Git', 'Maven']
     }
 ];
 

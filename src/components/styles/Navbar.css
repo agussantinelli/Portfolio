@@ -70,3 +70,56 @@
 .mobile-menu-btn {
     color: var(--color-white) !important;
 }
+
+/* Mobile Drawer Styles */
+.mobile-drawer-container {
+    height: 100%;
+    background: var(--color-black);
+    padding-top: 20px;
+}
+
+.mobile-drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.close-drawer-btn {
+    color: var(--color-slate-light) !important;
+}
+
+.mobile-drawer-list {
+    padding: 20px 10px !important;
+}
+
+.mobile-nav-btn {
+    border-radius: 12px !important;
+    margin-bottom: 4px !important;
+    transition: all 0.3s ease !important;
+}
+
+.mobile-nav-btn .MuiListItemText-primary {
+    color: var(--color-slate-light);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.mobile-nav-btn:hover {
+    background: rgba(0, 163, 255, 0.05) !important;
+}
+
+.mobile-nav-btn:hover .MuiListItemText-primary {
+    color: var(--color-yellow);
+}
+
+.btn-resume-mobile {
+    border-color: var(--color-blue-primary) !important;
+    color: var(--color-blue-primary) !important;
+    text-transform: none !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+}
