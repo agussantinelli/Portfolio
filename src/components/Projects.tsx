@@ -74,17 +74,16 @@ export default function Projects() {
                                     elevation={0}
                                     className="project-card"
                                 >
-                                    {project.status && (
-                                        <Box className="wip-badge">
-                                            {project.status}
-                                        </Box>
-                                    )}
                                     <CardContent sx={{ flexGrow: 1, p: 4 }}>
+                                        {project.status && (
+                                            <Box className="wip-badge">
+                                                {project.status}
+                                            </Box>
+                                        )}
                                         <Typography
                                             variant="h5"
                                             className="project-card-title"
                                             gutterBottom
-                                            sx={{ pr: project.status ? 12 : 0 }}
                                         >
                                             {project.title}
                                         </Typography>
@@ -112,7 +111,7 @@ export default function Projects() {
                                             target="_blank"
                                             className="btn-explore"
                                         >
-                                            Explore Code ↗
+                                            Explore Code <span className="arrow">↗</span>
                                         </Button>
                                     </CardActions>
                                 </Card>

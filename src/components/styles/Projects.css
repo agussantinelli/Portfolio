@@ -15,7 +15,8 @@
 }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(2, 6, 23, 0.7);
+    backdrop-filter: blur(12px);
     color: var(--color-white);
     height: 100%;
     display: flex;
@@ -24,72 +25,95 @@
     border: 1px solid rgba(255, 255, 255, 0.05);
     overflow: hidden;
     position: relative;
-    transition: all 0.4s ease;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .project-card:hover {
-    border-color: rgba(0, 163, 255, 0.3);
-    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 163, 255, 0.05);
-    background: rgba(0, 163, 255, 0.01);
-}
-
-.project-card:hover .project-card-title {
-    color: var(--color-blue-primary);
+    border-color: rgba(0, 163, 255, 0.4);
+    box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8),
+        0 0 30px rgba(0, 163, 255, 0.1);
+    transform: translateY(-10px) scale(1.02);
 }
 
 .wip-badge {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    display: inline-block;
     background: rgba(250, 204, 21, 0.1);
     color: var(--color-yellow);
-    padding: 4px 12px;
-    border-radius: 20px;
+    padding: 6px 12px;
+    border-radius: 8px;
     font-size: 0.65rem;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: 0.05em;
     border: 1px solid rgba(250, 204, 21, 0.2);
     text-transform: uppercase;
-    z-index: 1;
+    margin-bottom: 16px;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(250, 204, 21, 0.05);
 }
 
 .project-card-title {
-    font-weight: 700;
+    font-weight: 800;
     color: var(--color-white);
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    letter-spacing: -0.02em;
+    font-size: 1.75rem !important;
+}
+
+.project-card:hover .project-card-title {
+    color: var(--color-yellow);
+    text-shadow: 0 0 20px rgba(250, 204, 21, 0.2);
 }
 
 .project-card-desc {
     color: var(--color-slate);
     margin-bottom: 32px;
-    line-height: 1.8;
-    font-size: 0.95rem;
+    line-height: 1.7;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
 .tech-chip {
     background: rgba(255, 255, 255, 0.03) !important;
     color: var(--color-slate-light) !important;
-    border-radius: 6px !important;
-    border: 1px solid rgba(255, 255, 255, 0.05) !important;
-    font-size: 0.75rem !important;
-    font-weight: 600 !important;
-    transition: all 0.2s !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    padding: 14px 4px !important;
+    transition: all 0.3s ease !important;
 }
 
 .project-card:hover .tech-chip {
-    border-color: rgba(0, 163, 255, 0.2) !important;
-    background: rgba(0, 163, 255, 0.05) !important;
+    border-color: rgba(0, 163, 255, 0.3) !important;
+    background: rgba(0, 163, 255, 0.08) !important;
+    color: var(--color-white) !important;
+}
+
+.tech-chip:hover {
+    background: var(--color-blue-primary) !important;
+    border-color: var(--color-blue-primary) !important;
+    transform: translateY(-2px);
 }
 
 .btn-explore {
     color: var(--color-blue-primary) !important;
     text-transform: none !important;
-    font-weight: 700 !important;
-    transition: all 0.2s !important;
+    font-weight: 800 !important;
+    font-size: 0.9rem !important;
+    transition: all 0.3s ease !important;
+    gap: 8px;
 }
 
 .btn-explore:hover {
-    background: rgba(0, 163, 255, 0.05) !important;
-    padding-left: 16px !important;
+    background: rgba(0, 163, 255, 0.08) !important;
     color: var(--color-yellow) !important;
+    padding-left: 20px !important;
+}
+
+.btn-explore .arrow {
+    transition: transform 0.3s ease;
+}
+
+.btn-explore:hover .arrow {
+    transform: translateX(6px);
 }

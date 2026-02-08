@@ -37,7 +37,7 @@ export default function Contact() {
                     <Button
                         variant="outlined"
                         size="large"
-                        href="mailto:agussantinelli.dev@gmail.com"
+                        href="mailto:agustinsantinelli@gmail.com"
                         className="btn-say-hello"
                     >
                         Say Hello
