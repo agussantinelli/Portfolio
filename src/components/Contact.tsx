@@ -5,50 +5,103 @@ import { motion } from 'framer-motion';
 
 export default function Contact() {
     return (
-        <Box component="section" id="contact" sx={{ py: 15, bgcolor: '#0a192f', textAlign: 'center' }}>
+        <Box component="section" id="contact" sx={{ py: 20, bgcolor: 'var(--color-black)', textAlign: 'center', position: 'relative' }}>
             <Container maxWidth="sm">
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                 >
-                    <Typography variant="overline" color="primary" sx={{ fontWeight: 600, letterSpacing: 2 }}>
+                    <Typography
+                        variant="overline"
+                        sx={{
+                            fontWeight: 700,
+                            letterSpacing: 4,
+                            color: 'var(--color-aqua)',
+                            mb: 2,
+                            display: 'block'
+                        }}
+                    >
                         ¿QUÉ SIGUE?
                     </Typography>
-                    <Typography variant="h3" sx={{ color: '#ccd6f6', fontWeight: 700, mb: 3 }}>
+                    <Typography
+                        variant="h2"
+                        sx={{
+                            color: 'var(--color-white)',
+                            fontWeight: 800,
+                            mb: 3,
+                            fontSize: { xs: '2.5rem', md: '3.5rem' }
+                        }}
+                    >
                         Ponte en Contacto
                     </Typography>
-                    <Typography variant="body1" sx={{ color: '#8892b0', mb: 6 }}>
+                    <Typography
+                        variant="body1"
+                        sx={{
+                            color: 'var(--color-white)',
+                            opacity: 0.6,
+                            mb: 8,
+                            fontSize: '1.1rem',
+                            lineHeight: 1.8
+                        }}
+                    >
                         Actualmente estoy buscando nuevas oportunidades para colaborar en proyectos interesantes.
                         Si tienes alguna pregunta o simplemente quieres saludar, ¡mi bandeja de entrada siempre está abierta!
                     </Typography>
 
                     <Button
-                        variant="outlined"
+                        variant="contained"
                         size="large"
                         href="mailto:tuemail@ejemplo.com"
                         sx={{
-                            px: 6,
-                            py: 2,
+                            px: 10,
+                            py: 2.5,
                             textTransform: 'none',
-                            fontSize: '1.1rem',
-                            mb: 6
+                            fontSize: '1.2rem',
+                            mb: 10,
+                            bgcolor: 'var(--color-aqua)',
+                            color: 'var(--color-black)',
+                            fontWeight: 700,
+                            borderRadius: '16px',
+                            '&:hover': {
+                                bgcolor: 'var(--color-aqua)',
+                                boxShadow: '0 0 30px rgba(0, 255, 242, 0.4)',
+                                transform: 'scale(1.05)'
+                            },
+                            transition: 'all 0.3s'
                         }}
                     >
                         Di Hola
                     </Button>
 
-                    <Stack direction="row" spacing={2} justifyContent="center">
-                        <IconButton href="https://github.com/tuusuario" target="_blank" color="primary">
-                            <GitHub />
-                        </IconButton>
-                        <IconButton href="https://linkedin.com/in/tuusuario" target="_blank" color="primary">
-                            <LinkedIn />
-                        </IconButton>
-                        <IconButton href="https://twitter.com/tuusuario" target="_blank" color="primary">
-                            <Twitter />
-                        </IconButton>
+                    <Stack direction="row" spacing={3} justifyContent="center">
+                        {[
+                            { icon: <GitHub />, href: "https://github.com/tuusuario" },
+                            { icon: <LinkedIn />, href: "https://linkedin.com/in/tuusuario" },
+                            { icon: <Twitter />, href: "https://twitter.com/tuusuario" }
+                        ].map((social, i) => (
+                            <IconButton
+                                key={i}
+                                href={social.href}
+                                target="_blank"
+                                sx={{
+                                    color: 'var(--color-white)',
+                                    opacity: 0.7,
+                                    border: '1px solid rgba(255, 255, 255, 0.1)',
+                                    p: 1.5,
+                                    transition: 'all 0.3s',
+                                    '&:hover': {
+                                        color: 'var(--color-aqua)',
+                                        borderColor: 'var(--color-aqua)',
+                                        bgcolor: 'rgba(0, 255, 242, 0.05)',
+                                        transform: 'translateY(-5px)'
+                                    }
+                                }}
+                            >
+                                {social.icon}
+                            </IconButton>
+                        ))}
                     </Stack>
                 </motion.div>
             </Container>

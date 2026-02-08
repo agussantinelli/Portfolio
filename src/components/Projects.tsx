@@ -37,44 +37,104 @@ const projects = [
 
 export default function Projects() {
     return (
-        <Box component="section" id="projects" sx={{ py: 10, bgcolor: '#0a192f' }}>
+        <Box component="section" id="projects" sx={{ py: 15, bgcolor: 'var(--color-black)' }}>
             <Container maxWidth="lg">
-                <Typography variant="h3" sx={{ color: '#ccd6f6', fontWeight: 700, mb: 6, textAlign: 'center' }}>
-                    Proyectos Destacados
+                <Typography
+                    variant="h3"
+                    sx={{
+                        color: 'var(--color-white)',
+                        fontWeight: 800,
+                        mb: 8,
+                        textAlign: 'center',
+                        '& span': { color: 'var(--color-aqua)' }
+                    }}
+                >
+                    Proyectos <span>Destacados</span>
                 </Typography>
                 <Grid container spacing={4}>
                     {projects.map((project, index) => (
                         <Grid size={{ xs: 12, md: 4 }} key={index}>
                             <motion.div
-                                whileHover={{ y: -10 }}
-                                transition={{ type: 'spring', stiffness: 300 }}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, delay: index * 0.1 }}
+                                viewport={{ once: true }}
+                                whileHover={{ y: -12 }}
                             >
-                                <Card sx={{ bgcolor: '#112240', color: '#ccd6f6', height: '100%', display: 'flex', flexDirection: 'column', border: '1px solid rgba(100, 255, 218, 0.1)' }}>
-                                    <CardContent sx={{ flexGrow: 1 }}>
-                                        <Typography variant="h5" gutterBottom sx={{ fontWeight: 600, color: '#64ffda' }}>
+                                <Card
+                                    elevation={0}
+                                    sx={{
+                                        bgcolor: 'rgba(255, 255, 255, 0.02)',
+                                        color: 'var(--color-white)',
+                                        height: '100%',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        borderRadius: '24px',
+                                        border: '1px solid rgba(255, 255, 255, 0.05)',
+                                        overflow: 'hidden',
+                                        transition: 'all 0.4s ease',
+                                        '&:hover': {
+                                            borderColor: 'rgba(0, 255, 242, 0.3)',
+                                            boxShadow: '0 20px 40px -20px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 255, 242, 0.05)',
+                                            '& .project-title': { color: 'var(--color-aqua)' }
+                                        }
+                                    }}
+                                >
+                                    <CardContent sx={{ flexGrow: 1, p: 4 }}>
+                                        <Typography
+                                            variant="h5"
+                                            className="project-title"
+                                            gutterBottom
+                                            sx={{
+                                                fontWeight: 700,
+                                                color: 'var(--color-white)',
+                                                transition: 'color 0.3s ease'
+                                            }}
+                                        >
                                             {project.title}
                                         </Typography>
-                                        <Typography variant="body2" sx={{ color: '#8892b0', mb: 3, lineHeight: 1.6 }}>
+                                        <Typography
+                                            variant="body2"
+                                            sx={{
+                                                color: 'var(--color-white)',
+                                                opacity: 0.6,
+                                                mb: 4,
+                                                lineHeight: 1.8,
+                                                fontSize: '0.95rem'
+                                            }}
+                                        >
                                             {project.description}
                                         </Typography>
-                                        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                                        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1.2 }}>
                                             {project.stack.map((tech) => (
                                                 <Chip
                                                     key={tech}
                                                     label={tech}
                                                     size="small"
                                                     sx={{
-                                                        bgcolor: 'rgba(100, 255, 218, 0.1)',
-                                                        color: '#64ffda',
-                                                        border: '1px solid #64ffda',
-                                                        fontSize: '0.7rem'
+                                                        bgcolor: 'rgba(0, 255, 242, 0.05)',
+                                                        color: 'var(--color-aqua)',
+                                                        borderRadius: '6px',
+                                                        border: '1px solid rgba(0, 255, 242, 0.2)',
+                                                        fontSize: '0.75rem',
+                                                        fontWeight: 600
                                                     }}
                                                 />
                                             ))}
                                         </Box>
                                     </CardContent>
-                                    <CardActions sx={{ p: 2, pt: 0 }}>
-                                        <Button size="small" sx={{ color: '#64ffda', textTransform: 'none' }}>Ver más</Button>
+                                    <CardActions sx={{ p: 4, pt: 0 }}>
+                                        <Button
+                                            size="small"
+                                            sx={{
+                                                color: 'var(--color-aqua)',
+                                                textTransform: 'none',
+                                                fontWeight: 700,
+                                                '&:hover': { bgcolor: 'rgba(0, 255, 242, 0.05)' }
+                                            }}
+                                        >
+                                            Ver más ↗
+                                        </Button>
                                     </CardActions>
                                 </Card>
                             </motion.div>
