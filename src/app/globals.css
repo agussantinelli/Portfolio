@@ -1,12 +1,25 @@
+@import "@fontsource/manrope/400.css";
+@import "@fontsource/manrope/500.css";
+@import "@fontsource/manrope/700.css";
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Color Palette */
+  --color-navy: #001f3f;
+  --color-blue-light: #0074d9;
+  --color-sky: #7fdbff;
+  --color-yellow: #ffdc00;
+  --color-aqua: #00fff2;
+  --color-black: #111111;
+  --color-white: #ffffff;
+
+  --background: var(--color-white);
+  --foreground: var(--color-black);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--color-black);
+    --foreground: var(--color-white);
   }
 }
 
@@ -19,7 +32,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Manrope", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
