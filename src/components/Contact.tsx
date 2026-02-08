@@ -52,7 +52,7 @@ export default function Contact() {
                         {[
                             { icon: <GitHub />, link: 'https://github.com/agussantinelli' },
                             { icon: <LinkedIn />, link: 'https://linkedin.com/in/agustinsantinelli' },
-                            { icon: <Email />, link: 'mailto:agussantinelli.dev@gmail.com' }
+                            { icon: <Email />, link: 'mailto:agustinsantinelli@gmail.com' }
                         ].map((social, i) => (
                             <IconButton
                                 key={i}
