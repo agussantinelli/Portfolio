@@ -1,11 +1,12 @@
 'use client';
-import { Box, Container, Typography, Button, Stack, IconButton } from '@mui/material';
-import { GitHub, LinkedIn, Email, Twitter } from '@mui/icons-material';
+import { Box, Container, Typography, Button, IconButton, Stack } from '@mui/material';
 import { motion } from 'framer-motion';
+import { GitHub, LinkedIn, Email } from '@mui/icons-material';
+import './styles/Contact.css';
 
 export default function Contact() {
     return (
-        <Box component="section" id="contact" sx={{ py: 20, bgcolor: 'var(--color-black)', textAlign: 'center', position: 'relative' }}>
+        <Box component="section" id="contact" className="contact-section">
             <Container maxWidth="sm">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -15,36 +16,19 @@ export default function Contact() {
                 >
                     <Typography
                         variant="overline"
-                        sx={{
-                            fontWeight: 700,
-                            letterSpacing: 3,
-                            color: 'var(--color-aqua)',
-                            mb: 2,
-                            display: 'block'
-                        }}
+                        className="contact-overline"
                     >
                         WHAT'S NEXT?
                     </Typography>
                     <Typography
                         variant="h2"
-                        sx={{
-                            color: 'var(--color-white)',
-                            fontWeight: 800,
-                            mb: 3,
-                            fontSize: { xs: '2.5rem', md: '3.5rem' }
-                        }}
+                        className="contact-title"
                     >
                         Get In Touch
                     </Typography>
                     <Typography
                         variant="body1"
-                        sx={{
-                            color: 'var(--color-white)',
-                            opacity: 0.6,
-                            mb: 6,
-                            fontSize: '1.1rem',
-                            lineHeight: 1.8
-                        }}
+                        className="contact-description"
                     >
                         I'm currently looking for new opportunities and my inbox is always open.
                         Whether you have a question or just want to say hi, I'll try my best to get back to you!
@@ -54,21 +38,7 @@ export default function Contact() {
                         variant="outlined"
                         size="large"
                         href="mailto:agussantinelli.dev@gmail.com"
-                        sx={{
-                            color: 'var(--color-aqua)',
-                            borderColor: 'var(--color-aqua)',
-                            px: 5,
-                            py: 2,
-                            textTransform: 'none',
-                            fontSize: '1rem',
-                            fontWeight: 700,
-                            borderRadius: '12px',
-                            '&:hover': {
-                                bgcolor: 'rgba(0, 255, 242, 0.05)',
-                                borderColor: 'var(--color-white)',
-                                color: 'var(--color-white)',
-                            }
-                        }}
+                        className="btn-say-hello"
                     >
                         Say Hello
                     </Button>
@@ -77,7 +47,7 @@ export default function Contact() {
                         direction="row"
                         spacing={4}
                         justifyContent="center"
-                        sx={{ mt: 10 }}
+                        className="social-stack"
                     >
                         {[
                             { icon: <GitHub />, link: 'https://github.com/agussantinelli' },
@@ -89,16 +59,7 @@ export default function Contact() {
                                 component="a"
                                 href={social.link}
                                 target="_blank"
-                                sx={{
-                                    color: 'var(--color-white)',
-                                    opacity: 0.4,
-                                    transition: 'all 0.3s',
-                                    '&:hover': {
-                                        opacity: 1,
-                                        color: 'var(--color-aqua)',
-                                        transform: 'translateY(-5px)'
-                                    }
-                                }}
+                                className="social-icon-btn"
                             >
                                 {social.icon}
                             </IconButton>

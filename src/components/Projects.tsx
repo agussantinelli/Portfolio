@@ -1,6 +1,7 @@
 'use client';
 import { Box, Container, Typography, Grid, Card, CardContent, CardActions, Button, Chip } from '@mui/material';
 import { motion } from 'framer-motion';
+import './styles/Projects.css';
 
 const projects = [
     {
@@ -51,17 +52,11 @@ const projects = [
 
 export default function Projects() {
     return (
-        <Box component="section" id="projects" sx={{ py: 15, bgcolor: 'var(--color-black)' }}>
+        <Box component="section" id="projects" className="projects-section">
             <Container maxWidth="lg">
                 <Typography
                     variant="h3"
-                    sx={{
-                        color: 'var(--color-white)',
-                        fontWeight: 800,
-                        mb: 8,
-                        textAlign: 'center',
-                        '& span': { color: 'var(--color-aqua)' }
-                    }}
+                    className="projects-title"
                 >
                     Featured <span>Projects</span>
                 </Typography>
@@ -73,74 +68,29 @@ export default function Projects() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: index * 0.1 }}
                                 viewport={{ once: true }}
-                                whileHover={{ y: -12 }}
                                 style={{ height: '100%' }}
                             >
                                 <Card
                                     elevation={0}
-                                    sx={{
-                                        bgcolor: 'rgba(255, 255, 255, 0.02)',
-                                        color: 'var(--color-white)',
-                                        height: '100%',
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        borderRadius: '24px',
-                                        border: '1px solid rgba(255, 255, 255, 0.05)',
-                                        overflow: 'hidden',
-                                        position: 'relative',
-                                        transition: 'all 0.4s ease',
-                                        '&:hover': {
-                                            borderColor: 'rgba(0, 255, 242, 0.3)',
-                                            boxShadow: '0 20px 40px -20px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 255, 242, 0.05)',
-                                            '& .project-title': { color: 'var(--color-aqua)' }
-                                        }
-                                    }}
+                                    className="project-card"
                                 >
                                     {project.status && (
-                                        <Box
-                                            sx={{
-                                                position: 'absolute',
-                                                top: 20,
-                                                right: 20,
-                                                bgcolor: 'rgba(0, 255, 242, 0.1)',
-                                                color: 'var(--color-aqua)',
-                                                px: 1.5,
-                                                py: 0.5,
-                                                borderRadius: '20px',
-                                                fontSize: '0.65rem',
-                                                fontWeight: 800,
-                                                letterSpacing: 1,
-                                                border: '1px solid rgba(0, 255, 242, 0.2)',
-                                                textTransform: 'uppercase',
-                                                zIndex: 1
-                                            }}
-                                        >
+                                        <Box className="wip-badge">
                                             {project.status}
                                         </Box>
                                     )}
                                     <CardContent sx={{ flexGrow: 1, p: 4 }}>
                                         <Typography
                                             variant="h5"
-                                            className="project-title"
+                                            className="project-card-title"
                                             gutterBottom
-                                            sx={{
-                                                fontWeight: 700,
-                                                color: 'var(--color-white)',
-                                                transition: 'color 0.3s ease',
-                                                pr: project.status ? 12 : 0
-                                            }}
+                                            sx={{ pr: project.status ? 12 : 0 }}
                                         >
                                             {project.title}
                                         </Typography>
                                         <Typography
                                             variant="body2"
-                                            sx={{
-                                                color: 'var(--color-white)',
-                                                opacity: 0.6,
-                                                mb: 4,
-                                                lineHeight: 1.8,
-                                                fontSize: '0.95rem'
-                                            }}
+                                            className="project-card-desc"
                                         >
                                             {project.description}
                                         </Typography>
@@ -150,14 +100,7 @@ export default function Projects() {
                                                     key={tech}
                                                     label={tech}
                                                     size="small"
-                                                    sx={{
-                                                        bgcolor: 'rgba(0, 255, 242, 0.05)',
-                                                        color: 'var(--color-aqua)',
-                                                        borderRadius: '6px',
-                                                        border: '1px solid rgba(0, 255, 242, 0.2)',
-                                                        fontSize: '0.75rem',
-                                                        fontWeight: 600
-                                                    }}
+                                                    className="tech-chip"
                                                 />
                                             ))}
                                         </Box>
@@ -167,16 +110,7 @@ export default function Projects() {
                                             size="small"
                                             href={project.link}
                                             target="_blank"
-                                            sx={{
-                                                color: 'var(--color-aqua)',
-                                                textTransform: 'none',
-                                                fontWeight: 700,
-                                                transition: 'all 0.2s',
-                                                '&:hover': {
-                                                    bgcolor: 'rgba(0, 255, 242, 0.05)',
-                                                    pl: 2
-                                                }
-                                            }}
+                                            className="btn-explore"
                                         >
                                             Explore Code ↗
                                         </Button>

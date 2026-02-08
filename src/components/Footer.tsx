@@ -1,38 +1,20 @@
 'use client';
-import { Box, Typography, Container } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
+import './styles/Footer.css';
 
 export default function Footer() {
     return (
-        <Box
-            component="footer"
-            sx={{
-                py: 6,
-                bgcolor: 'var(--color-black)',
-                borderTop: '1px solid rgba(255, 255, 255, 0.05)',
-                textAlign: 'center'
-            }}
-        >
+        <Box component="footer" className="footer-section">
             <Container maxWidth="lg">
                 <Typography
                     variant="body2"
-                    sx={{
-                        color: 'var(--color-white)',
-                        opacity: 0.4,
-                        fontWeight: 500,
-                        letterSpacing: 1
-                    }}
+                    className="footer-credit"
                 >
-                    Designed & Built by Agus Santinelli
+                    Designed & Built by Agustín Santinelli
                 </Typography>
                 <Typography
                     variant="caption"
-                    sx={{
-                        color: 'var(--color-white)',
-                        opacity: 0.2,
-                        mt: 1,
-                        display: 'block',
-                        fontSize: '0.7rem'
-                    }}
+                    className="footer-tech"
                 >
                     © {new Date().getFullYear()} — Built with Next.js & MUI
                 </Typography>

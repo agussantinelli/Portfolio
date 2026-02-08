@@ -1,8 +1,8 @@
 'use client';
 import { AppBar, Toolbar, Typography, Button, Stack, Container, Box, IconButton, useScrollTrigger } from '@mui/material';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import MenuIcon from '@mui/icons-material/Menu';
+import './styles/Navbar.css';
 
 const navItems = [
     { name: 'Home', href: '#' },
@@ -19,32 +19,7 @@ const NavButton = ({ item, index }: { item: typeof navItems[0], index: number })
     >
         <Button
             href={item.href}
-            sx={{
-                color: 'var(--color-white)',
-                textTransform: 'none',
-                fontSize: '0.95rem',
-                fontWeight: 500,
-                px: 2,
-                position: 'relative',
-                '&::after': {
-                    content: '""',
-                    position: 'absolute',
-                    bottom: 0,
-                    left: '50%',
-                    width: 0,
-                    height: '2px',
-                    bgcolor: 'var(--color-aqua)',
-                    transition: 'all 0.3s ease-in-out',
-                    transform: 'translateX(-50%)',
-                },
-                '&:hover': {
-                    bgcolor: 'transparent',
-                    color: 'var(--color-aqua)',
-                    '&::after': {
-                        width: '70%',
-                    }
-                }
-            }}
+            className="nav-link"
         >
             {item.name}
         </Button>
@@ -60,12 +35,12 @@ export default function Navbar() {
     return (
         <AppBar
             position="fixed"
+            className="navbar-appbar"
             sx={{
-                bgcolor: trigger ? 'rgba(17, 17, 17, 0.9)' : 'transparent',
+                bgcolor: trigger ? 'rgba(2, 6, 23, 0.9)' : 'transparent',
                 backdropFilter: trigger ? 'blur(10px)' : 'none',
                 boxShadow: trigger ? '0 4px 30px rgba(0, 0, 0, 0.5)' : 'none',
-                transition: 'all 0.3s ease-in-out',
-                borderBottom: trigger ? '1px solid rgba(0, 255, 242, 0.1)' : 'none'
+                borderBottom: trigger ? '1px solid rgba(255, 255, 255, 0.05)' : 'none'
             }}
         >
             <Container maxWidth="lg">
@@ -79,21 +54,9 @@ export default function Navbar() {
                             variant="h5"
                             component="a"
                             href="#"
-                            sx={{
-                                color: 'var(--color-white)',
-                                fontWeight: 800,
-                                textDecoration: 'none',
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 0.5,
-                                fontSize: '1.5rem',
-                                '& span': {
-                                    color: 'var(--color-aqua)',
-                                    textShadow: '0 0 10px rgba(0, 255, 242, 0.5)'
-                                }
-                            }}
+                            className="brand-text"
                         >
-                            AGUS<span>.</span>
+                            AGUSTÍN<span>.</span>
                         </Typography>
                     </motion.div>
 
@@ -109,20 +72,7 @@ export default function Navbar() {
                         >
                             <Button
                                 variant="outlined"
-                                sx={{
-                                    ml: 2,
-                                    borderColor: 'var(--color-aqua)',
-                                    color: 'var(--color-aqua)',
-                                    textTransform: 'none',
-                                    borderRadius: '8px',
-                                    px: 3,
-                                    fontWeight: 600,
-                                    '&:hover': {
-                                        borderColor: 'var(--color-aqua)',
-                                        bgcolor: 'rgba(0, 255, 242, 0.1)',
-                                        boxShadow: '0 0 15px rgba(0, 255, 242, 0.3)'
-                                    }
-                                }}
+                                className="btn-resume"
                             >
                                 Resume
                             </Button>
@@ -130,7 +80,8 @@ export default function Navbar() {
                     </Stack>
 
                     <IconButton
-                        sx={{ display: { xs: 'flex', md: 'none' }, color: 'var(--color-white)' }}
+                        className="mobile-menu-btn"
+                        sx={{ display: { xs: 'flex', md: 'none' } }}
                     >
                         <MenuIcon />
                     </IconButton>

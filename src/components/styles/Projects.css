@@ -1,0 +1,95 @@
+.projects-section {
+    padding: 120px 0;
+    background: var(--color-black);
+}
+
+.projects-title {
+    color: var(--color-white);
+    font-weight: 800;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.projects-title span {
+    color: var(--color-purple);
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--color-white);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    border-color: rgba(130, 87, 229, 0.3);
+    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.7), 0 0 20px rgba(130, 87, 229, 0.05);
+    background: rgba(130, 87, 229, 0.01);
+}
+
+.project-card:hover .project-card-title {
+    color: var(--color-purple);
+}
+
+.wip-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(130, 87, 229, 0.1);
+    color: var(--color-purple);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border: 1px solid rgba(130, 87, 229, 0.2);
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.project-card-title {
+    font-weight: 700;
+    color: var(--color-white);
+    transition: color 0.3s ease;
+}
+
+.project-card-desc {
+    color: var(--color-slate);
+    margin-bottom: 32px;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.tech-chip {
+    background: rgba(255, 255, 255, 0.03) !important;
+    color: var(--color-slate-light) !important;
+    border-radius: 6px !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    transition: all 0.2s !important;
+}
+
+.project-card:hover .tech-chip {
+    border-color: rgba(77, 90, 229, 0.2) !important;
+    background: rgba(77, 90, 229, 0.05) !important;
+}
+
+.btn-explore {
+    color: var(--color-electric) !important;
+    text-transform: none !important;
+    font-weight: 700 !important;
+    transition: all 0.2s !important;
+}
+
+.btn-explore:hover {
+    background: rgba(77, 90, 229, 0.05) !important;
+    padding-left: 16px !important;
+    color: var(--color-purple) !important;
+}

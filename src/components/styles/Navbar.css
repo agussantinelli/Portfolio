@@ -1,0 +1,72 @@
+.navbar-appbar {
+    transition: all 0.3s ease-in-out !important;
+}
+
+.brand-text {
+    color: var(--color-white);
+    font-weight: 800;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+}
+
+.brand-text span {
+    color: var(--color-purple);
+    text-shadow: 0 0 10px rgba(130, 87, 229, 0.3);
+}
+
+.nav-link {
+    color: var(--color-slate-light) !important;
+    text-transform: none !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    padding: 8px 16px !important;
+    position: relative;
+    transition: all 0.3s ease !important;
+}
+
+.nav-link:hover {
+    color: var(--color-white) !important;
+    background: transparent !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--color-electric);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 60%;
+}
+
+.btn-resume {
+    margin-left: 16px !important;
+    border-color: rgba(77, 90, 229, 0.3) !important;
+    color: var(--color-slate-light) !important;
+    text-transform: none !important;
+    border-radius: 8px !important;
+    padding: 6px 20px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s !important;
+}
+
+.btn-resume:hover {
+    border-color: var(--color-electric) !important;
+    color: var(--color-white) !important;
+    background: rgba(77, 90, 229, 0.05) !important;
+    box-shadow: 0 0 15px rgba(77, 90, 229, 0.2) !important;
+}
+
+.mobile-menu-btn {
+    color: var(--color-white) !important;
+}

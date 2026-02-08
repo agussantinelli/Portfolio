@@ -1,0 +1,71 @@
+.skills-section {
+    padding: 120px 0;
+    background: var(--color-black);
+    position: relative;
+}
+
+.skills-title {
+    color: var(--color-white);
+    font-weight: 800;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.skills-title span {
+    color: var(--color-electric);
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 32px;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.skill-card:hover {
+    border-color: rgba(77, 90, 229, 0.3);
+    background: rgba(77, 90, 229, 0.03);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
+}
+
+.skill-category {
+    color: var(--color-white);
+    font-weight: 700;
+    margin-bottom: 24px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.skill-category::before {
+    content: "";
+    width: 4px;
+    height: 20px;
+    background: var(--color-electric);
+    border-radius: 2px;
+}
+
+.skill-tag {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: var(--color-slate-light) !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    font-weight: 500 !important;
+    padding: 16px 8px !important;
+    transition: all 0.2s ease !important;
+}
+
+.skill-card:hover .skill-tag {
+    border-color: rgba(77, 90, 229, 0.2) !important;
+    color: var(--color-white) !important;
+}
+
+.skill-tag:hover {
+    background: var(--color-electric) !important;
+    color: var(--color-white) !important;
+    border-color: var(--color-electric) !important;
+}
