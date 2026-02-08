@@ -14,8 +14,8 @@
 }
 
 .brand-text span {
-    color: var(--color-purple);
-    text-shadow: 0 0 10px rgba(130, 87, 229, 0.3);
+    color: var(--color-yellow);
+    text-shadow: 0 0 10px rgba(250, 204, 21, 0.3);
 }
 
 .nav-link {
@@ -40,7 +40,7 @@
     left: 50%;
     width: 0;
     height: 2px;
-    background: var(--color-electric);
+    background: var(--color-yellow);
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -51,7 +51,7 @@
 
 .btn-resume {
     margin-left: 16px !important;
-    border-color: rgba(77, 90, 229, 0.3) !important;
+    border-color: rgba(0, 163, 255, 0.3) !important;
     color: var(--color-slate-light) !important;
     text-transform: none !important;
     border-radius: 8px !important;
@@ -61,10 +61,10 @@
 }
 
 .btn-resume:hover {
-    border-color: var(--color-electric) !important;
+    border-color: var(--color-blue-primary) !important;
     color: var(--color-white) !important;
-    background: rgba(77, 90, 229, 0.05) !important;
-    box-shadow: 0 0 15px rgba(77, 90, 229, 0.2) !important;
+    background: rgba(0, 163, 255, 0.05) !important;
+    box-shadow: 0 0 15px rgba(0, 163, 255, 0.2) !important;
 }
 
 .mobile-menu-btn {

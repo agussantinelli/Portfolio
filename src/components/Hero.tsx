@@ -16,7 +16,7 @@ export default function Hero() {
                         variant="h1"
                         className="hero-name"
                     >
-                        Agustín Santinelli<Box component="span" sx={{ color: 'var(--color-purple)' }}>.</Box>
+                        Agustín Santinelli<Box component="span" sx={{ color: 'var(--color-yellow)' }}>.</Box>
                     </Typography>
 
                     <Typography

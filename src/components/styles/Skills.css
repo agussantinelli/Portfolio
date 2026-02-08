@@ -12,7 +12,7 @@
 }
 
 .skills-title span {
-    color: var(--color-electric);
+    color: var(--color-blue-primary);
 }
 
 .skill-card {
@@ -25,8 +25,8 @@
 }
 
 .skill-card:hover {
-    border-color: rgba(77, 90, 229, 0.3);
-    background: rgba(77, 90, 229, 0.03);
+    border-color: rgba(0, 163, 255, 0.3);
+    background: rgba(0, 163, 255, 0.02);
     transform: translateY(-8px);
     box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
 }
@@ -45,8 +45,12 @@
     content: "";
     width: 4px;
     height: 20px;
-    background: var(--color-electric);
+    background: var(--color-blue-primary);
     border-radius: 2px;
+}
+
+.skill-card:hover .skill-category::before {
+    background: var(--color-yellow);
 }
 
 .skill-tag {
@@ -60,12 +64,12 @@
 }
 
 .skill-card:hover .skill-tag {
-    border-color: rgba(77, 90, 229, 0.2) !important;
+    border-color: rgba(0, 163, 255, 0.2) !important;
     color: var(--color-white) !important;
 }
 
 .skill-tag:hover {
-    background: var(--color-electric) !important;
+    background: var(--color-blue-primary) !important;
     color: var(--color-white) !important;
-    border-color: var(--color-electric) !important;
+    border-color: var(--color-blue-primary) !important;
 }

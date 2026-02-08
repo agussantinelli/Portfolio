@@ -2,8 +2,8 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: radial-gradient(circle at 10% 20%, rgba(77, 90, 229, 0.05) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(130, 87, 229, 0.05) 0%, transparent 40%),
+    background: radial-gradient(circle at 10% 20%, rgba(0, 163, 255, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(250, 204, 21, 0.05) 0%, transparent 40%),
         var(--color-black);
     position: relative;
     overflow: hidden;
@@ -21,13 +21,16 @@
 .hero-name {
     font-size: clamp(3rem, 10vw, 6rem);
     font-weight: 900;
-    line-height: 1;
+    line-height: 1.25;
+    /* Fixed cutoff issue */
     margin-bottom: 1rem;
     letter-spacing: -0.04em;
-    background: linear-gradient(to right, var(--color-white) 30%, var(--color-purple), var(--color-electric));
+    background: linear-gradient(to right, var(--color-white) 40%, var(--color-blue-primary), var(--color-yellow));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-bottom: 0.1em;
+    /* Extra insurance for descenders */
 }
 
 .hero-subtitle {
@@ -39,6 +42,10 @@
     line-height: 1.2;
 }
 
+.hero-subtitle span {
+    color: var(--color-yellow);
+}
+
 .hero-description {
     font-size: 1.1rem;
     color: var(--color-slate);
@@ -48,24 +55,24 @@
 }
 
 .hero-description strong {
-    color: var(--color-white);
+    color: var(--color-blue-primary);
     font-weight: 600;
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--color-electric), var(--color-purple)) !important;
+    background: linear-gradient(135deg, var(--color-blue-primary), var(--color-blue-secondary)) !important;
     color: var(--color-white) !important;
     padding: 1.2rem 3rem !important;
     font-weight: 800 !important;
     border-radius: 12px !important;
     text-transform: none !important;
-    box-shadow: 0 10px 20px -10px rgba(77, 90, 229, 0.5) !important;
+    box-shadow: 0 10px 20px -10px rgba(0, 163, 255, 0.5) !important;
     transition: all 0.3s ease !important;
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 30px -10px rgba(77, 90, 229, 0.6) !important;
+    box-shadow: 0 15px 30px -10px rgba(0, 163, 255, 0.6) !important;
     filter: brightness(1.1);
 }
 
@@ -81,32 +88,37 @@
 }
 
 .btn-secondary:hover {
-    border-color: var(--color-electric) !important;
-    background: rgba(77, 90, 229, 0.05) !important;
-    color: var(--color-electric) !important;
+    border-color: var(--color-yellow) !important;
+    background: rgba(250, 204, 21, 0.05) !important;
+    color: var(--color-yellow) !important;
 }
 
 .focus-card {
     padding: 1.5rem;
-    border-left: 2px solid rgba(77, 90, 229, 0.2);
+    border-left: 2px solid rgba(0, 163, 255, 0.2);
     background: rgba(255, 255, 255, 0.02);
     transition: all 0.3s ease;
     height: 100%;
 }
 
 .focus-card:hover {
-    background: rgba(77, 90, 229, 0.05);
-    border-left-color: var(--color-electric);
+    background: rgba(0, 163, 255, 0.05);
+    border-left-color: var(--color-yellow);
     transform: translateX(5px);
+    box-shadow: 0 0 15px rgba(250, 204, 21, 0.05);
 }
 
 .focus-title {
-    color: var(--color-electric);
+    color: var(--color-blue-primary);
     font-weight: 800;
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+
+.focus-card:hover .focus-title {
+    color: var(--color-yellow);
 }
 
 .focus-desc {

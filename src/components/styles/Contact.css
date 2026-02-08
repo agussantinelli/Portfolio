@@ -6,7 +6,7 @@
 }
 
 .contact-overline {
-    color: var(--color-electric);
+    color: var(--color-yellow);
     font-weight: 700;
     letter-spacing: 3px;
     margin-bottom: 16px;
@@ -30,7 +30,7 @@
 
 .btn-say-hello {
     color: var(--color-white) !important;
-    border: 1px solid var(--color-electric) !important;
+    border: 1px solid var(--color-blue-primary) !important;
     padding: 1rem 3rem !important;
     font-size: 1rem !important;
     font-weight: 700 !important;
@@ -40,9 +40,9 @@
 }
 
 .btn-say-hello:hover {
-    background: rgba(77, 90, 229, 0.05) !important;
-    border-color: var(--color-purple) !important;
-    box-shadow: 0 0 20px rgba(77, 90, 229, 0.2) !important;
+    background: rgba(0, 163, 255, 0.05) !important;
+    border-color: var(--color-yellow) !important;
+    box-shadow: 0 0 20px rgba(0, 163, 255, 0.2) !important;
     transform: translateY(-2px);
 }
 
@@ -58,6 +58,6 @@
 
 .social-icon-btn:hover {
     opacity: 1 !important;
-    color: var(--color-electric) !important;
+    color: var(--color-yellow) !important;
     transform: translateY(-5px);
 }
