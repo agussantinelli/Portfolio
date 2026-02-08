@@ -78,12 +78,46 @@
     </tbody>
 </table>
 
-<h2 align="left">✅ Características y Roadmap</h2>
+<h2 align="left">🚀 Propuesta de Valor</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Área</th>
+            <th>Característica</th>
+            <th>Beneficio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Diseño</strong></td>
+            <td>Mobile First & Dark Mode</td>
+            <td>Navegación impecable en cualquier dispositivo con estética moderna.</td>
+        </tr>
+        <tr>
+            <td><strong>Performance</strong></td>
+            <td>Static Rendering</td>
+            <td>Carga instantánea y optimización SEO para buscadores.</td>
+        </tr>
+        <tr>
+            <td><strong>Interacción</strong></td>
+            <td>Framer Motion</td>
+            <td>Feedback visual premium y transiciones suaves entre secciones.</td>
+        </tr>
+        <tr>
+            <td><strong>Contenido</strong></td>
+            <td>Showcase Dinámico</td>
+            <td>Visualización clara de proyectos con filtrado por tecnologías.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 align="left">✅ Roadmap de Desarrollo</h2>
 <ul>
-  <li>📱 <b>Diseño Responsivo:</b> Interfaz adaptada a cualquier dispositivo.</li>
-  <li>📂 <b>Showcase de Proyectos:</b> Listado detallado de desarrollos destacados.</li>
-  <li>🧠 <b>Skills & Tech:</b> Sección dedicada a aptitudes y stack de herramientas.</li>
-  <li>📧 <b>Conectividad:</b> Formulario de contacto y enlaces directos a redes sociales.</li>
+    <li>[x] 📱 <b>Diseño Responsivo:</b> Interfaz adaptada a cualquier dispositivo.</li>
+    <li>[x] 📂 <b>Showcase de Proyectos:</b> Listado detallado de desarrollos destacados con datos reales.</li>
+    <li>[x] 🧠 <b>Skills & Tech:</b> Sección dedicada a aptitudes y stack de herramientas.</li>
+    <li>[ ] 📧 <b>Conectividad:</b> Formulario de contacto y enlaces directos a redes sociales. (En curso)</li>
 </ul>
 
 <h2 align="left">📦 Instalación</h2>
