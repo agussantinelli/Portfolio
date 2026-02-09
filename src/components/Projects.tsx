@@ -1,4 +1,5 @@
 'use client';
+import React from 'react';
 import { Box, Container, Typography, Card, CardContent, CardActions, Button, Chip } from '@mui/material';
 import { motion } from 'framer-motion';
 import './styles/Projects.css';
@@ -72,79 +73,90 @@ export default function Projects() {
                     }}
                 >
                     {projects.map((project, index) => (
-                        <Box
-                            key={index}
-                            sx={{
-                                flex: {
-                                    xs: '1 1 100%',           // Móvil: 1 por fila
-                                    sm: '1 1 calc(50% - 12px)',  // Tablet: 2 por fila
-                                    md: '0 1 calc(33.333% - 16px)', // Desktop: 3 por fila
-                                },
-                                maxWidth: {
-                                    xs: '100%',
-                                    sm: 'calc(50% - 12px)',
-                                    md: 'calc(33.333% - 16px)',
-                                },
-                                minWidth: {
-                                    xs: '100%',
-                                    sm: 'calc(50% - 12px)',
-                                    md: 'calc(33.333% - 16px)',
-                                },
-                            }}
-                        >
-                            <motion.div
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
-                                viewport={{ once: true }}
-                                style={{ display: 'flex', width: '100%' }}
+                        <React.Fragment key={index}>
+                            <Box
+                                sx={{
+                                    flex: {
+                                        xs: '1 1 100%',           // Móvil: 1 por fila
+                                        sm: '1 1 calc(50% - 12px)',  // Tablet: 2 por fila
+                                        md: '0 1 calc(33.333% - 16px)', // Desktop: 3 por fila
+                                    },
+                                    maxWidth: {
+                                        xs: '100%',
+                                        sm: 'calc(50% - 12px)',
+                                        md: 'calc(33.333% - 16px)',
+                                    },
+                                    minWidth: {
+                                        xs: '100%',
+                                        sm: 'calc(50% - 12px)',
+                                        md: 'calc(33.333% - 16px)',
+                                    },
+                                }}
                             >
-                                <Card
-                                    elevation={0}
-                                    className="project-card"
+                                <motion.div
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                                    viewport={{ once: true }}
+                                    style={{ display: 'flex', width: '100%' }}
                                 >
-                                    <CardContent sx={{ flexGrow: 1, p: 3, pb: 1 }}>
-                                        <Typography
-                                            variant="h5"
-                                            className="project-card-title"
-                                        >
-                                            {project.title}
-                                        </Typography>
-                                        <Typography
-                                            variant="body2"
-                                            className="project-card-desc"
-                                        >
-                                            {project.description}
-                                        </Typography>
-                                        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.8 }}>
-                                            {project.stack.map((tech) => (
-                                                <Chip
-                                                    key={tech}
-                                                    label={tech}
-                                                    size="small"
-                                                    className="tech-chip"
-                                                />
-                                            ))}
-                                        </Box>
-                                    </CardContent>
-                                    {project.status && (
-                                        <Box className="wip-badge">
-                                            {project.status}
-                                        </Box>
-                                    )}
-                                    <CardActions sx={{ p: 3, pt: 2 }}>
-                                        <Button
-                                            disableRipple
-                                            href={project.link}
-                                            target="_blank"
-                                            className="btn-explore"
-                                        >
-                                            Explore Code <span className="arrow">↗</span>
-                                        </Button>
-                                    </CardActions>
-                                </Card>
-                            </motion.div>
-                        </Box>
+                                    <Card
+                                        elevation={0}
+                                        className="project-card"
+                                    >
+                                        <CardContent sx={{ flexGrow: 1, p: 3, pb: 1 }}>
+                                            <Typography
+                                                variant="h5"
+                                                className="project-card-title"
+                                            >
+                                                {project.title}
+                                            </Typography>
+                                            <Typography
+                                                variant="body2"
+                                                className="project-card-desc"
+                                            >
+                                                {project.description}
+                                            </Typography>
+                                            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.8 }}>
+                                                {project.stack.map((tech) => (
+                                                    <Chip
+                                                        key={tech}
+                                                        label={tech}
+                                                        size="small"
+                                                        className="tech-chip"
+                                                    />
+                                                ))}
+                                            </Box>
+                                        </CardContent>
+                                        {project.status && (
+                                            <Box className="wip-badge">
+                                                {project.status}
+                                            </Box>
+                                        )}
+                                        <CardActions sx={{ p: 3, pt: 2 }}>
+                                            <Button
+                                                disableRipple
+                                                href={project.link}
+                                                target="_blank"
+                                                className="btn-explore"
+                                            >
+                                                Explore Code <span className="arrow">↗</span>
+                                            </Button>
+                                        </CardActions>
+                                    </Card>
+                                </motion.div>
+                            </Box>
+
+                            {/* Break después de card 3 (index 2) - fuerza fila 2 */}
+                            {index === 2 && (
+                                <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
+                            )}
+
+                            {/* Break después de card 5 (index 4) - fuerza fila 3 */}
+                            {index === 4 && (
+                                <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
+                            )}
+                        </React.Fragment>
                     ))}
                 </Box>
             </Container>
