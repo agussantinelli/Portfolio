@@ -51,7 +51,7 @@ export default function Contact() {
                     >
                         {[
                             { icon: <GitHub />, link: 'https://github.com/agussantinelli' },
-                            { icon: <LinkedIn />, link: 'https://linkedin.com/in/agustinsantinelli' },
+                            { icon: <LinkedIn />, link: 'https://www.linkedin.com/in/agustin-santinelli-a60639300/' },
                             { icon: <Email />, link: 'mailto:agustinsantinelli@gmail.com' }
                         ].map((social, i) => (
                             <IconButton
