@@ -6,7 +6,7 @@ import './styles/Skills.css';
 const skills = [
     {
         category: 'Languages',
-        items: ['TypeScript', 'JavaScript', 'C#', 'Java', 'SQL', 'HTML & CSS']
+        items: ['TypeScript', 'JavaScript', 'C#', 'Java', 'SQL', 'HTML', 'CSS']
     },
     {
         category: 'Backend & APIs',
