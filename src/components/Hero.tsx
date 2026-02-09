@@ -1,5 +1,5 @@
 'use client';
-import { Box, Typography, Button, Container, Stack, Grid } from '@mui/material';
+import { Box, Typography, Button, Container, Stack } from '@mui/material';
 import { motion } from 'framer-motion';
 import './styles/Hero.css';
 
@@ -11,29 +11,40 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="hero-content-wrapper" // Nueva clase contenedora
                 >
+                    {/* Nombre */}
                     <Typography
                         variant="h1"
+                        component="h1"
                         className="hero-name"
                     >
                         Agustín Santinelli<Box component="span" sx={{ color: 'var(--color-yellow)' }}>.</Box>
                     </Typography>
 
+                    {/* Rol / Subtítulo */}
                     <Typography
                         variant="h2"
+                        component="h2"
                         className="hero-subtitle"
                     >
-                        Information Systems Engineering Student.
+                        Information Systems <br />Engineering Student.
                     </Typography>
 
+                    {/* Descripción */}
                     <Typography
                         variant="body1"
                         className="hero-description"
                     >
-                        Passionate about <strong>software engineering</strong>, <strong>clean architectures</strong>, and data-driven applications. Specializing in transforming complex business requirements into scalable, mission-critical software. Based in Rosario, Argentina.
+                        Passionate about <strong>software engineering</strong>, clean architectures, and data-driven applications. Specializing in transforming complex business requirements into scalable, mission-critical software. Based in Rosario, Argentina.
                     </Typography>
 
-                    <Stack direction={{ xs: 'column', sm: 'row' }} spacing={3} sx={{ mb: 8 }}>
+                    {/* Botones */}
+                    <Stack
+                        direction={{ xs: 'column', sm: 'row' }}
+                        spacing={3}
+                        className="hero-buttons" // Clase para separar el bloque entero
+                    >
                         <Button
                             variant="contained"
                             size="large"
