@@ -40,6 +40,10 @@ export const translations = {
             title: 'Get In Touch.',
             description: 'I\'m currently looking for new opportunities and my inbox is always open. Whether you have a question, a project idea, or just want to say hi, I\'ll try my best to get back to you!',
             button: 'Say Hello'
+        },
+        footer: {
+            credit: 'Designed & Built by Agustín Santinelli',
+            tech: 'Built with Next.js & MUI'
         }
     },
     es: {
@@ -83,6 +87,10 @@ export const translations = {
             title: 'Contactame.',
             description: 'Actualmente estoy buscando nuevas oportunidades y mi bandeja de entrada siempre está abierta. Ya sea que tengas una pregunta, una idea de proyecto, o solo quieras saludar, ¡haré mi mejor esfuerzo para responderte!',
             button: 'Di Hola'
+        },
+        footer: {
+            credit: 'Diseñado y Construido por Agustín Santinelli',
+            tech: 'Construido con Next.js y MUI'
         }
     }
 };
