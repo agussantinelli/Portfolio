@@ -47,7 +47,7 @@ export default function Navbar() {
         >
             <Box className="mobile-drawer-header">
                 <Typography className="brand-text">
-                    AGUSTÍN<span>.</span>
+                    AGUSTÍN <span>SANTINELLI</span>
                 </Typography>
                 <IconButton className="close-drawer-btn">
                     <CloseIcon />
@@ -102,7 +102,7 @@ export default function Navbar() {
                                 href="#"
                                 className="brand-text"
                             >
-                                AGUSTÍN<span>.</span>
+                                AGUSTÍN  <span> SANTINELLI</span>
                             </Typography>
                         </motion.div>
 
