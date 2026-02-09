@@ -32,7 +32,8 @@ export const translations = {
                 buyjugador: 'Comprehensive retail management system for the gaming sector. Synchronizes inventory and sales across Blazor WASM and WinForms using Repository and Unit of Work patterns.',
                 impulsame: 'Secure community-driven crowdfunding platform. Implements a robust project lifecycle state machine and a handcrafted JDBC persistence layer for optimized performance.',
                 estacionar: 'Urban mobility platform transforming parking reservations. Digitalizes traditional operations through real-time geocoding and seamless regional payment integration.',
-                promiedos: 'Advanced NBA statistics platform in Spanish. Centralizes live boxscores, historical performance analytics, and franchise wikis with high-performance hybrid rendering.'
+                promiedos: 'Advanced NBA statistics platform in Spanish. Centralizes live boxscores, historical performance analytics, and franchise wikis with high-performance hybrid rendering.',
+                marketflex: 'Adaptive E-commerce & Marketplace Ecosystem. A high-performance core designed for modular metamorphosis, adapting to diverse business models without rewriting core logic. Features context-aware behavior and polymorphic UI components.'
             }
         },
         contact: {
@@ -79,7 +80,8 @@ export const translations = {
                 buyjugador: 'Sistema integral de gestión retail para el sector gaming. Sincroniza inventario y ventas entre Blazor WASM y WinForms usando patrones Repository y Unit of Work.',
                 impulsame: 'Plataforma segura de crowdfunding impulsada por la comunidad. Implementa una máquina de estados robusta del ciclo de vida de proyectos y una capa de persistencia JDBC artesanal para rendimiento optimizado.',
                 estacionar: 'Plataforma de movilidad urbana que transforma las reservas de estacionamiento. Digitaliza operaciones tradicionales mediante geocodificación en tiempo real e integración de pagos regionales.',
-                promiedos: 'Plataforma avanzada de estadísticas NBA en español. Centraliza boxscores en vivo, análisis de rendimiento histórico y wikis de franquicias con rendering híbrido de alto rendimiento.'
+                promiedos: 'Plataforma avanzada de estadísticas NBA en español. Centralizar boxscores en vivo, análisis de rendimiento histórico y wikis de franquicias con rendering híbrido de alto rendimiento.',
+                marketflex: 'Ecosistema Adaptable de E-commerce y Marketplace. Núcleo de alto rendimiento diseñado para la metamorfosis modular, adaptándose a diversos modelos de negocio sin reescribir la lógica central. Incluye componentes UI polimórficos.'
             }
         },
         contact: {

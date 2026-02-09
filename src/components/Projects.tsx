@@ -56,6 +56,14 @@ const projects = [
         stack: ["Astro", "Node.js", "MySQL", "TypeScript", "Astro Islands"],
         link: "https://github.com/agussantinelli/Promiedos-NBA-FrontEnd",
         status: "Work in Progress"
+    },
+    {
+        title: "MarketFlex",
+        descriptionKey: "marketflex" as const,
+        description: "Adaptive E-commerce & Marketplace Ecosystem. A high-performance core designed for modular metamorphosis, adapting to diverse business models without rewriting core logic.",
+        stack: ["Astro", "Node.js", "Express", "TypeScript", "Modular Architecture"],
+        link: "https://github.com/agussantinelli/MarketFlex-FrontEnd",
+        status: "Work in Progress"
     }
 ];
 
