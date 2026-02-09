@@ -4,6 +4,9 @@
     <a href="https://github.com/agussantinelli/Portfolio" target="_blank">
         <img src="https://img.shields.io/badge/💻%20Repo%20Portfolio-Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Portfolio Repo Badge"/>
     </a>
+    <a href="https://agussantinelli.github.io/Portfolio/" target="_blank">
+        <img src="https://img.shields.io/badge/🌐%20Live%20Demo-Portfolio-000000?style=for-the-badge&logo=browser&logoColor=white" alt="Live Demo Badge"/>
+    </a>
     <a href="https://github.com/agussantinelli" target="_blank">
         <img src="https://img.shields.io/badge/👤%20Contacto-agussantinelli-000000?style=for-the-badge&logo=github&logoColor=white" alt="Contact Badge"/>
     </a>
@@ -111,79 +114,6 @@
         </tr>
     </tbody>
 </table>
-
-<h2 align="left">✅ Roadmap de Desarrollo</h2>
-<ul>
-    <li>[x] 📱 <b>Diseño Responsivo:</b> Interfaz adaptada a cualquier dispositivo.</li>
-    <li>[x] 📂 <b>Showcase de Proyectos:</b> Listado detallado de desarrollos destacados con datos reales.</li>
-    <li>[x] 🧠 <b>Skills & Tech:</b> Sección dedicada a aptitudes y stack de herramientas.</li>
-    <li>[ ] 📧 <b>Conectividad:</b> Formulario de contacto y enlaces directos a redes sociales. (En curso)</li>
-</ul>
-
-<h2 align="left">📦 Instalación</h2>
-
-```bash
-# Clonar el repositorio
-git clone https://github.com/tuusuario/Portfolio.git
-
-# Entrar al directorio
-cd Portfolio
-
-# Instalar dependencias
-npm install
-```
-
-<h2 align="left">🚀 Cómo Correr la Aplicación</h2>
-
-### Modo Desarrollo
-```bash
-npm run dev
-```
-El servidor se levantará en [http://localhost:3000](http://localhost:3000)
-
-### Build de Producción
-```bash
-# Generar el build estático
-npm run build
-
-# El output estará en la carpeta /out
-```
-
-### Previsualizar el Build
-```bash
-# Instalar serve (solo la primera vez)
-npm install -g serve
-
-# Servir el build estático
-serve out
-```
-
-<h2 align="left">📁 Estructura del Proyecto</h2>
-
-```
-Portfolio/
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx      # Layout raíz con MUI Provider
-│   │   ├── page.tsx        # Página principal
-│   │   └── globals.css     # Estilos globales
-│   ├── components/
-│   │   ├── Hero.tsx        # Sección de presentación
-│   │   └── Projects.tsx    # Showcase de proyectos
-│   └── theme.ts            # Configuración del tema de MUI
-├── next.config.js          # Configuración de Next.js
-├── package.json
-└── README.md
-```
-
-<h2 align="left">🌐 Deployment en GitHub Pages</h2>
-
-Este proyecto está configurado para generar un export estático compatible con GitHub Pages:
-
-1. Hacer push de tus cambios a GitHub
-2. Configurar GitHub Actions (workflow incluido próximamente)
-3. El sitio se deployará automáticamente en `https://tuusuario.github.io/Portfolio`
-
 
 <hr>
 
