@@ -1,63 +1,100 @@
 .contact-section {
-    padding: 160px 0;
+    padding: 180px 0;
     background: var(--color-black);
     text-align: center;
     position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, rgba(0, 163, 255, 0.03) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.contact-content {
+    position: relative;
+    z-index: 1;
 }
 
 .contact-overline {
-    color: var(--color-yellow);
+    color: var(--color-blue-primary);
     font-weight: 700;
-    letter-spacing: 3px;
-    margin-bottom: 16px;
+    letter-spacing: 0.2em;
+    margin-bottom: 24px !important;
     display: block;
+    font-size: 0.9rem !important;
 }
 
 .contact-title {
-    color: var(--color-white);
-    font-weight: 800;
-    margin-bottom: 24px;
-    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    font-weight: 800 !important;
+    margin-bottom: 32px !important;
+    font-size: clamp(3rem, 10vw, 5rem) !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.1 !important;
+
+    background: linear-gradient(135deg, var(--color-white) 30%, var(--color-slate-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .contact-description {
     color: var(--color-slate);
     max-width: 600px;
-    margin: 0 auto 48px;
-    line-height: 1.8;
-    font-size: 1.1rem;
+    margin: 0 auto !important;
+    line-height: 1.8 !important;
+    font-size: 1.15rem !important;
+    font-weight: 400;
 }
 
 .btn-say-hello {
     color: var(--color-white) !important;
-    border: 1px solid var(--color-blue-primary) !important;
-    padding: 1rem 3rem !important;
-    font-size: 1rem !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 1.2rem 4rem !important;
+    font-size: 1.1rem !important;
     font-weight: 700 !important;
     border-radius: 12px !important;
     text-transform: none !important;
-    transition: all 0.3s ease !important;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    backdrop-filter: blur(10px);
+    letter-spacing: 0.05em;
 }
 
 .btn-say-hello:hover {
-    background: rgba(0, 163, 255, 0.05) !important;
-    border-color: var(--color-yellow) !important;
-    box-shadow: 0 0 20px rgba(0, 163, 255, 0.2) !important;
-    transform: translateY(-2px);
+    background: rgba(0, 163, 255, 0.08) !important;
+    border-color: var(--color-blue-primary) !important;
+    color: var(--color-blue-primary) !important;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px -10px rgba(0, 163, 255, 0.3) !important;
 }
 
 .social-stack {
-    margin-top: 80px;
+    margin-top: 0;
 }
 
 .social-icon-btn {
-    color: var(--color-white) !important;
-    opacity: 0.4 !important;
+    color: var(--color-slate) !important;
+    background: transparent !important;
     transition: all 0.3s ease !important;
+    padding: 12px !important;
+    border: 1px solid transparent !important;
 }
 
 .social-icon-btn:hover {
-    opacity: 1 !important;
     color: var(--color-yellow) !important;
-    transform: translateY(-5px);
+    background: rgba(250, 204, 21, 0.05) !important;
+    border-color: rgba(250, 204, 21, 0.2) !important;
+    transform: translateY(-4px);
 }

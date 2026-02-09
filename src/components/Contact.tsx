@@ -7,52 +7,58 @@ import './styles/Contact.css';
 export default function Contact() {
     return (
         <Box component="section" id="contact" className="contact-section">
-            <Container maxWidth="sm">
+            <Container maxWidth="md">
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: true }}
+                    className="contact-content"
                 >
                     <Typography
                         variant="overline"
                         className="contact-overline"
                     >
-                        WHAT'S NEXT?
+                        What's Next?
                     </Typography>
+
                     <Typography
                         variant="h2"
                         className="contact-title"
                     >
-                        Get In Touch
+                        Get In Touch.
                     </Typography>
+
                     <Typography
                         variant="body1"
                         className="contact-description"
                     >
                         I'm currently looking for new opportunities and my inbox is always open.
-                        Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                        Whether you have a question, a project idea, or just want to say hi,
+                        I'll try my best to get back to you!
                     </Typography>
 
-                    <Button
-                        variant="outlined"
-                        size="large"
-                        href="mailto:agustinsantinelli@gmail.com"
-                        className="btn-say-hello"
-                    >
-                        Say Hello
-                    </Button>
+                    <Box sx={{ mt: 6, mb: 8 }}>
+                        <Button
+                            variant="outlined"
+                            size="large"
+                            href="mailto:agustinsantinelli@gmail.com"
+                            className="btn-say-hello"
+                        >
+                            Say Hello
+                        </Button>
+                    </Box>
 
                     <Stack
                         direction="row"
-                        spacing={4}
+                        spacing={3}
                         justifyContent="center"
                         className="social-stack"
                     >
                         {[
-                            { icon: <GitHub />, link: 'https://github.com/agussantinelli' },
-                            { icon: <LinkedIn />, link: 'https://www.linkedin.com/in/agustin-santinelli-a60639300/' },
-                            { icon: <Email />, link: 'mailto:agustinsantinelli@gmail.com' }
+                            { icon: <GitHub fontSize="large" />, link: 'https://github.com/agussantinelli' },
+                            { icon: <LinkedIn fontSize="large" />, link: 'https://www.linkedin.com/in/agustin-santinelli-a60639300/' },
+                            { icon: <Email fontSize="large" />, link: 'mailto:agustinsantinelli@gmail.com' }
                         ].map((social, i) => (
                             <IconButton
                                 key={i}
