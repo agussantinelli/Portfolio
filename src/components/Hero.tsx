@@ -18,8 +18,8 @@ export default function Hero() {
                 >
                     {/* Nombre */}
                     <Typography
-                        variant="h1"
-                        component="h1"
+                        variant="h2"
+                        component="h2"
                         className="hero-name"
                     >
                         Agustín Santinelli<Box component="span" sx={{ color: 'var(--color-yellow)' }}>.</Box>
