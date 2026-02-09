@@ -72,28 +72,38 @@
     text-shadow: 0 0 15px rgba(250, 204, 21, 0.2);
 }
 
-/* Badge debajo del título */
+/* Badge mejorado - posicionado entre content y actions */
 .wip-badge {
-    display: inline-block;
-    background: rgba(250, 204, 21, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 48px);
+    margin: 0 24px 16px 24px;
+    background: linear-gradient(135deg, rgba(250, 204, 21, 0.12) 0%, rgba(250, 204, 21, 0.05) 100%);
     color: var(--color-yellow);
-    padding: 6px 12px;
-    border-radius: 50px;
-    font-size: 0.65rem;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    border: 1px solid rgba(250, 204, 21, 0.3);
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    border: 1px solid rgba(250, 204, 21, 0.25);
     text-transform: uppercase;
-    backdrop-filter: blur(4px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    margin-top: 8px;
-    margin-bottom: 12px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 8px rgba(250, 204, 21, 0.1);
+    transition: all 0.3s ease;
+}
+
+.wip-badge:hover {
+    background: linear-gradient(135deg, rgba(250, 204, 21, 0.18) 0%, rgba(250, 204, 21, 0.08) 100%);
+    border-color: rgba(250, 204, 21, 0.4);
+    box-shadow: 0 4px 12px rgba(250, 204, 21, 0.2);
+    transform: translateY(-1px);
 }
 
 .wip-badge::before {
     content: "●";
-    margin-right: 6px;
-    font-size: 0.8rem;
+    margin-right: 8px;
+    font-size: 0.9rem;
     animation: pulse 2s infinite;
 }
 
