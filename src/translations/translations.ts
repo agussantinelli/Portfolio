@@ -6,7 +6,7 @@ export const translations = {
             projects: 'Projects',
             contact: 'Contact',
             resume: 'Resume',
-            resumeUrl: '/cv-en.pdf'
+            resumeUrl: '/Portfolio/cv-en.pdf'
         },
         hero: {
             greeting: 'Hi, my name is',
@@ -49,7 +49,7 @@ export const translations = {
             projects: 'Proyectos',
             contact: 'Contacto',
             resume: 'Currículum',
-            resumeUrl: '/cv-es.pdf'
+            resumeUrl: '/Portfolio/cv-es.pdf'
         },
         hero: {
             greeting: 'Hola, mi nombre es',
