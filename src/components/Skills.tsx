@@ -1,24 +1,24 @@
 'use client';
-import { Box, Container, Typography, Grid, Chip } from '@mui/material';
+import { Box, Container, Typography, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 import './styles/Skills.css';
 
 const skills = [
     {
         category: 'Languages',
-        items: ['TypeScript', 'JavaScript', 'C#', 'Java', 'SQL', 'HTML', 'CSS']
+        items: ['TypeScript', 'JavaScript', 'C#', 'Java', 'SQL', 'HTML & CSS']
     },
     {
         category: 'Backend & APIs',
-        items: ['Node.js (Express)', 'ASP.NET Core', 'Spring Boot', 'Jakarta EE', 'Clean Architecture', 'DTOs']
+        items: ['Node.js (Express)', 'ASP.NET Core', 'Spring Boot', 'Jakarta EE']
     },
     {
         category: 'Frontend & Mobile',
-        items: ['React', 'Next.js', 'Angular', 'Astro', 'React Native', 'Blazor WASM', 'Material UI']
+        items: ['React', 'Next.js', 'Angular', 'Blazor WASM', 'Material UI']
     },
     {
         category: 'Databases & Tools',
-        items: ['PostgreSQL', 'SQL Server', 'MySQL', 'Prisma', 'Hibernate', 'Git', 'Maven']
+        items: ['PostgreSQL', 'SQL Server', 'MySQL', 'Prisma', 'Hibernate', 'GitHub', 'Maven']
     }
 ];
 
@@ -32,7 +32,7 @@ export default function Skills() {
                 >
                     Skills <span>&</span> Technologies
                 </Typography>
-                <Grid container spacing={3}>
+                <Grid container spacing={4} justifyContent="center">
                     {skills.map((skillGroup, index) => (
                         <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
                             <motion.div
@@ -45,16 +45,14 @@ export default function Skills() {
                                 <Typography className="skill-category">
                                     {skillGroup.category}
                                 </Typography>
-                                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+
+                                <div className="skill-list">
                                     {skillGroup.items.map((skill) => (
-                                        <Chip
-                                            key={skill}
-                                            label={skill}
-                                            size="small"
-                                            className="skill-tag"
-                                        />
+                                        <div key={skill} className="skill-item">
+                                            {skill}
+                                        </div>
                                     ))}
-                                </Box>
+                                </div>
                             </motion.div>
                         </Grid>
                     ))}
