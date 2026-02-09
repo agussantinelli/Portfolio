@@ -2,41 +2,48 @@
 import React from 'react';
 import { Box, Container, Typography, Card, CardContent, CardActions, Button, Chip } from '@mui/material';
 import { motion } from 'framer-motion';
+import { useLanguage } from '@/context/LanguageContext';
 import './styles/Projects.css';
 
 const projects = [
     {
         title: "FinanzApp",
+        descriptionKey: "finanzapp" as const,
         description: "The definitive wealth dashboard for the Argentine investor. Consolidates assets (Crypto, stocks, CEDEARs, bonds) with real-time ARS/USD valuation, integrating AI for intelligent financial data parsing.",
         stack: ["Next.js 16", "ASP.NET Core 9", "PostgreSQL", "Material UI", "OpenRouter AI"],
         link: "https://github.com/agussantinelli/FinanzApp-FrontEnd"
     },
     {
         title: "Sysacad Next",
+        descriptionKey: "sysacad" as const,
         description: "High-scale reengineering of the legacy UTN academic portal. Eliminates bureaucratic friction through a reactive architecture managing complex academic rules and peak concurrency.",
         stack: ["Angular 19", "Spring Boot 3.5", "Java 21", "PostgreSQL", "Hibernate"],
         link: "https://github.com/agussantinelli/Sysacad-Next-FrontEnd"
     },
     {
         title: "TicketApp",
+        descriptionKey: "ticketapp" as const,
         description: "High-end marketplace for event ticketing. Features a custom SVG-based seat selection engine, secure Stripe integration, and automated e-ticket generation with QR codes.",
         stack: ["React 19", "Node.js", "Prisma", "MySQL", "Stripe API"],
         link: "https://github.com/agussantinelli/TicketApp-FrontEnd"
     },
     {
         title: "BuyJugador",
+        descriptionKey: "buyjugador" as const,
         description: "Comprehensive retail management system for the gaming sector. Synchronizes inventory and sales across Blazor WASM and WinForms using Repository and Unit of Work patterns.",
         stack: ["C#", ".NET 8", "Blazor WASM", "WinForms", "SQL Server"],
         link: "https://github.com/agussantinelli/ProyectoIDE-BuyJugador"
     },
     {
         title: "ImpulsaMe",
+        descriptionKey: "impulsame" as const,
         description: "Secure community-driven crowdfunding platform. Implements a robust project lifecycle state machine and a handcrafted JDBC persistence layer for optimized performance.",
         stack: ["Java", "Jakarta EE", "MySQL", "Stripe Checkout", "Tomcat"],
         link: "https://github.com/agussantinelli/ImpulsaMe-Java"
     },
     {
         title: "EstacionAR",
+        descriptionKey: "estacionar" as const,
         description: "Urban mobility platform transforming parking reservations. Digitalizes traditional operations through real-time geocoding and seamless regional payment integration.",
         stack: ["React Native", "Docker", "Node.js", "PostgreSQL", "TurboRepo"],
         link: "https://github.com/agussantinelli/EstacionAR.git",
@@ -44,6 +51,7 @@ const projects = [
     },
     {
         title: "Promiedos NBA",
+        descriptionKey: "promiedos" as const,
         description: "Advanced NBA statistics platform in Spanish. Centralizes live boxscores, historical performance analytics, and franchise wikis with high-performance hybrid rendering.",
         stack: ["Astro", "Node.js", "MySQL", "TypeScript", "Astro Islands"],
         link: "https://github.com/agussantinelli/Promiedos-NBA-FrontEnd",
@@ -52,6 +60,8 @@ const projects = [
 ];
 
 export default function Projects() {
+    const { language, t } = useLanguage();
+
     return (
         <Box component="section" id="projects" className="projects-section">
             <Container maxWidth="lg">
@@ -59,7 +69,7 @@ export default function Projects() {
                     variant="h3"
                     className="projects-title"
                 >
-                    Featured <span>Projects</span>
+                    {t.projects.title} <span>{t.projects.titleHighlight}</span>
                 </Typography>
 
                 {/* Layout con Box y Flexbox para 2-3 cards por fila */}
@@ -115,7 +125,7 @@ export default function Projects() {
                                                 variant="body2"
                                                 className="project-card-desc"
                                             >
-                                                {project.description}
+                                                {language === 'en' ? project.description : t.projects.descriptions[project.descriptionKey]}
                                             </Typography>
                                             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.8 }}>
                                                 {project.stack.map((tech) => (
@@ -130,7 +140,7 @@ export default function Projects() {
                                         </CardContent>
                                         {project.status && (
                                             <Box className="wip-badge">
-                                                {project.status}
+                                                {t.projects.wip}
                                             </Box>
                                         )}
                                         <CardActions sx={{ p: 3, pt: 2 }}>
@@ -140,7 +150,7 @@ export default function Projects() {
                                                 target="_blank"
                                                 className="btn-explore"
                                             >
-                                                Explore Code <span className="arrow">↗</span>
+                                                {t.projects.explore} <span className="arrow">↗</span>
                                             </Button>
                                         </CardActions>
                                     </Card>

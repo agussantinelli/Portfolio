@@ -1,6 +1,7 @@
 'use client';
 import { Box, Container, Typography, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
+import { useLanguage } from '@/context/LanguageContext';
 import './styles/Skills.css';
 
 const skills = [
@@ -23,6 +24,8 @@ const skills = [
 ];
 
 export default function Skills() {
+    const { t } = useLanguage();
+
     return (
         <Box component="section" id="skills" className="skills-section">
             <Container maxWidth="lg">
@@ -30,7 +33,7 @@ export default function Skills() {
                     variant="h3"
                     className="skills-title"
                 >
-                    Skills <span>&</span> Technologies
+                    {t.skills.title} <span>&</span> {t.skills.subtitle}
                 </Typography>
                 <Grid container spacing={4} justifyContent="center">
                     {skills.map((skillGroup, index) => (

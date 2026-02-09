@@ -2,9 +2,12 @@
 import { Box, Container, Typography, Button, IconButton, Stack } from '@mui/material';
 import { motion } from 'framer-motion';
 import { GitHub, LinkedIn, Email } from '@mui/icons-material';
+import { useLanguage } from '@/context/LanguageContext';
 import './styles/Contact.css';
 
 export default function Contact() {
+    const { t } = useLanguage();
+
     return (
         <Box component="section" id="contact" className="contact-section">
             <Container maxWidth="md">
@@ -19,23 +22,21 @@ export default function Contact() {
                         variant="overline"
                         className="contact-overline"
                     >
-                        What's Next?
+                        {t.contact.overline}
                     </Typography>
 
                     <Typography
                         variant="h2"
                         className="contact-title"
                     >
-                        Get In Touch.
+                        {t.contact.title}
                     </Typography>
 
                     <Typography
                         variant="body1"
                         className="contact-description"
                     >
-                        I'm currently looking for new opportunities and my inbox is always open.
-                        Whether you have a question, a project idea, or just want to say hi,
-                        I'll try my best to get back to you!
+                        {t.contact.description}
                     </Typography>
 
                     <Box sx={{ mt: 6, mb: 8 }}>
@@ -45,7 +46,7 @@ export default function Contact() {
                             href="mailto:agustinsantinelli@gmail.com"
                             className="btn-say-hello"
                         >
-                            Say Hello
+                            {t.contact.button}
                         </Button>
                     </Box>
 

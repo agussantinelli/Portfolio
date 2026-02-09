@@ -1,9 +1,12 @@
 'use client';
 import { Box, Typography, Button, Container, Stack } from '@mui/material';
 import { motion } from 'framer-motion';
+import { useLanguage } from '@/context/LanguageContext';
 import './styles/Hero.css';
 
 export default function Hero() {
+    const { language, t } = useLanguage();
+
     return (
         <Box component="section" id="home" className="hero-section">
             <Container maxWidth="lg">
@@ -28,7 +31,11 @@ export default function Hero() {
                         component="h2"
                         className="hero-subtitle"
                     >
-                        Information Systems <br />Engineering Student.
+                        {language === 'en' ? (
+                            <>Information Systems <br />Engineering Student.</>
+                        ) : (
+                            t.hero.role
+                        )}
                     </Typography>
 
                     {/* Descripción */}
@@ -36,7 +43,11 @@ export default function Hero() {
                         variant="body1"
                         className="hero-description"
                     >
-                        Passionate about <strong>software engineering</strong>, clean architectures, and data-driven applications. Specializing in transforming complex business requirements into scalable, mission-critical software. Based in Rosario, Argentina.
+                        {language === 'en' ? (
+                            <>Passionate about <strong>software engineering</strong>, clean architectures, and data-driven applications. Specializing in transforming complex business requirements into scalable, mission-critical software. Based in Rosario, Argentina.</>
+                        ) : (
+                            t.hero.description
+                        )}
                     </Typography>
 
                     {/* Botones */}
@@ -51,7 +62,7 @@ export default function Hero() {
                             href="#projects"
                             className="btn-primary"
                         >
-                            View Projects
+                            {t.hero.cta}
                         </Button>
                         <Button
                             variant="outlined"
@@ -59,7 +70,7 @@ export default function Hero() {
                             href="#contact"
                             className="btn-secondary"
                         >
-                            Get In Touch
+                            {t.hero.contactButton}
                         </Button>
                     </Stack>
                 </motion.div>

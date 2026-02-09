@@ -1,35 +1,40 @@
 'use client';
-import { AppBar, Toolbar, Typography, Button, Stack, Container, Box, IconButton, useScrollTrigger, Drawer, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Stack, Container, Box, IconButton, useScrollTrigger, Drawer, List, ListItem, ListItemButton, ListItemText, Select, MenuItem } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import LanguageIcon from '@mui/icons-material/Language';
+import { useLanguage } from '@/context/LanguageContext';
 import './styles/Navbar.css';
 
-const navItems = [
-    { name: 'Home', href: '#' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
-];
 
-const NavButton = ({ item, index }: { item: typeof navItems[0], index: number }) => (
+
+const NavButton = ({ name, href, index }: { name: string, href: string, index: number }) => (
     <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: index * 0.1 }}
     >
         <Button
-            href={item.href}
+            href={href}
             className="nav-link"
         >
-            {item.name}
+            {name}
         </Button>
     </motion.div>
 );
 
 export default function Navbar() {
+    const { language, setLanguage, t } = useLanguage();
     const [mobileOpen, setMobileOpen] = useState(false);
+
+    const navItems = [
+        { name: t.nav.home, href: '#' },
+        { name: t.nav.skills, href: '#skills' },
+        { name: t.nav.projects, href: '#projects' },
+        { name: t.nav.contact, href: '#contact' },
+    ];
 
     const trigger = useScrollTrigger({
         disableHysteresis: true,
@@ -65,13 +70,23 @@ export default function Navbar() {
                     </ListItem>
                 ))}
             </List>
-            <Box sx={{ px: 3, pt: 2 }}>
+            <Box sx={{ px: 3, pt: 2, display: 'flex', gap: 2, flexDirection: 'column' }}>
+                <Select
+                    value={language}
+                    onChange={(e) => setLanguage(e.target.value as 'en' | 'es')}
+                    className="language-selector-mobile"
+                    size="small"
+                    sx={{ bgcolor: 'rgba(255, 255, 255, 0.03)' }}
+                >
+                    <MenuItem value="en">🇺🇸 English</MenuItem>
+                    <MenuItem value="es">🇦🇷 Español</MenuItem>
+                </Select>
                 <Button
                     variant="outlined"
                     fullWidth
                     className="btn-resume-mobile"
                 >
-                    Resume
+                    {t.nav.resume}
                 </Button>
             </Box>
         </Box>
@@ -108,8 +123,26 @@ export default function Navbar() {
 
                         <Stack direction="row" spacing={1} sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}>
                             {navItems.map((item, index) => (
-                                <NavButton key={item.name} item={item} index={index} />
+                                <NavButton key={item.name} name={item.name} href={item.href} index={index} />
                             ))}
+
+                            <Box className="language-selector">
+                                <LanguageIcon sx={{ fontSize: '1.1rem', color: 'var(--color-slate)', mr: 0.5 }} />
+                                <Select
+                                    value={language}
+                                    onChange={(e) => setLanguage(e.target.value as 'en' | 'es')}
+                                    size="small"
+                                    className="language-select"
+                                    sx={{
+                                        color: 'var(--color-white)',
+                                        '.MuiOutlinedInput-notchedOutline': { border: 'none' },
+                                        '.MuiSvgIcon-root': { color: 'var(--color-blue-primary)' }
+                                    }}
+                                >
+                                    <MenuItem value="en">EN</MenuItem>
+                                    <MenuItem value="es">ES</MenuItem>
+                                </Select>
+                            </Box>
 
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.8 }}
@@ -120,7 +153,7 @@ export default function Navbar() {
                                     variant="outlined"
                                     className="btn-resume"
                                 >
-                                    Resume
+                                    {t.nav.resume}
                                 </Button>
                             </motion.div>
                         </Stack>

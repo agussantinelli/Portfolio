@@ -123,3 +123,40 @@
     font-weight: 700 !important;
     font-size: 1rem !important;
 }
+
+/* Language Selector Styles */
+.language-selector {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.language-select {
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    padding: 0 !important;
+}
+
+.language-select .MuiSelect-select {
+    padding: 4px 8px !important;
+    color: var(--color-slate-light) !important;
+    transition: color 0.3s ease !important;
+}
+
+.language-select:hover .MuiSelect-select {
+    color: var(--color-yellow) !important;
+}
+
+.language-selector-mobile {
+    color: var(--color-slate-light) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.language-selector-mobile .MuiSelect-select {
+    color: var(--color-slate-light) !important;
+}
+
+.language-selector-mobile:hover {
+    border-color: rgba(0, 163, 255, 0.3) !important;
+    background: rgba(0, 163, 255, 0.03) !important;
+}
