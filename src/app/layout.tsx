@@ -9,6 +9,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Agus Santinelli | Software Engineering Portfolio",
   description: "Software engineering student and developer specialized in high-performance, scalable systems.",
+  icons: {
+    icon: '/portafolio.png',
+  },
 };
 
 export default function RootLayout({

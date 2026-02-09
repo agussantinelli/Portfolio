@@ -5,6 +5,7 @@ import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import LanguageIcon from '@mui/icons-material/Language';
+import ReactCountryFlag from 'react-country-flag';
 import { useLanguage } from '@/context/LanguageContext';
 import './styles/Navbar.css';
 
@@ -78,8 +79,18 @@ export default function Navbar() {
                     size="small"
                     sx={{ bgcolor: 'rgba(255, 255, 255, 0.03)' }}
                 >
-                    <MenuItem value="en">🇺🇸 English</MenuItem>
-                    <MenuItem value="es">🇦🇷 Español</MenuItem>
+                    <MenuItem value="en">
+                        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                            <ReactCountryFlag countryCode="US" svg style={{ width: '1.5em', height: '1.5em' }} />
+                            <span>English</span>
+                        </Box>
+                    </MenuItem>
+                    <MenuItem value="es">
+                        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                            <ReactCountryFlag countryCode="AR" svg style={{ width: '1.5em', height: '1.5em' }} />
+                            <span>Español</span>
+                        </Box>
+                    </MenuItem>
                 </Select>
                 <Button
                     variant="outlined"
@@ -139,8 +150,18 @@ export default function Navbar() {
                                         '.MuiSvgIcon-root': { color: 'var(--color-blue-primary)' }
                                     }}
                                 >
-                                    <MenuItem value="en">EN</MenuItem>
-                                    <MenuItem value="es">ES</MenuItem>
+                                    <MenuItem value="en">
+                                        <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.75 }}>
+                                            <ReactCountryFlag countryCode="US" svg style={{ width: '1.2em', height: '1.2em' }} />
+                                            <span>EN</span>
+                                        </Box>
+                                    </MenuItem>
+                                    <MenuItem value="es">
+                                        <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.75 }}>
+                                            <ReactCountryFlag countryCode="AR" svg style={{ width: '1.2em', height: '1.2em' }} />
+                                            <span>ES</span>
+                                        </Box>
+                                    </MenuItem>
                                 </Select>
                             </Box>
 
