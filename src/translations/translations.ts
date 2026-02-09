@@ -5,7 +5,8 @@ export const translations = {
             skills: 'Skills',
             projects: 'Projects',
             contact: 'Contact',
-            resume: 'Resume'
+            resume: 'Resume',
+            resumeUrl: '/cv-en.pdf'
         },
         hero: {
             greeting: 'Hi, my name is',
@@ -47,7 +48,8 @@ export const translations = {
             skills: 'Habilidades',
             projects: 'Proyectos',
             contact: 'Contacto',
-            resume: 'Currículum'
+            resume: 'Currículum',
+            resumeUrl: '/cv-es.pdf'
         },
         hero: {
             greeting: 'Hola, mi nombre es',

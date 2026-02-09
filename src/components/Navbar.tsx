@@ -96,6 +96,8 @@ export default function Navbar() {
                     variant="outlined"
                     fullWidth
                     className="btn-resume-mobile"
+                    href={t.nav.resumeUrl}
+                    download
                 >
                     {t.nav.resume}
                 </Button>
@@ -173,6 +175,8 @@ export default function Navbar() {
                                 <Button
                                     variant="outlined"
                                     className="btn-resume"
+                                    href={t.nav.resumeUrl}
+                                    download
                                 >
                                     {t.nav.resume}
                                 </Button>
