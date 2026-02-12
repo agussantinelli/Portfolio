@@ -52,7 +52,7 @@ export default function Navbar() {
             className="mobile-drawer-container"
         >
             <Box className="mobile-drawer-header">
-                <Typography className="brand-text">
+                <Typography className="brand-text font-geist-pixel">
                     AGUSTÍN <span>SANTINELLI</span>
                 </Typography>
                 <IconButton className="close-drawer-btn">
@@ -128,7 +128,7 @@ export default function Navbar() {
                                 variant="h5"
                                 component="a"
                                 href="#"
-                                className="brand-text"
+                                className="brand-text font-geist-pixel"
                             >
                                 AGUSTÍN  <span> SANTINELLI</span>
                             </Typography>

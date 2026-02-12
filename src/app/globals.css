@@ -59,3 +59,7 @@ a {
     color-scheme: dark;
   }
 }
+
+.font-geist-pixel {
+  font-family: var(--font-geist-pixel-square) !important;
+}

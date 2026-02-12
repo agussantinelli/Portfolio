@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GeistPixelSquare } from "geist/font/pixel";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -21,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${GeistPixelSquare.variable}`}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />

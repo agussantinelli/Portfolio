@@ -20,7 +20,7 @@ export default function Hero() {
                     <Typography
                         variant="h2"
                         component="h2"
-                        className="hero-name"
+                        className="hero-name font-geist-pixel"
                     >
                         Agustín Santinelli<Box component="span" sx={{ color: 'var(--color-yellow)' }}>.</Box>
                     </Typography>
@@ -29,7 +29,7 @@ export default function Hero() {
                     <Typography
                         variant="h2"
                         component="h2"
-                        className="hero-subtitle"
+                        className="hero-subtitle font-geist-pixel"
                     >
                         {language === 'en' ? (
                             <>Information Systems <br />Engineering Student.</>
