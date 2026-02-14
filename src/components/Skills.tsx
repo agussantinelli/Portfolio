@@ -11,15 +11,15 @@ const skills = [
     },
     {
         category: 'Backend & APIs',
-        items: ['Node.js (Express)', 'ASP.NET Core', 'Spring Boot', 'Jakarta EE']
+        items: ['Node.js (Express)', 'ASP.NET Core', 'Spring Boot', 'Jakarta EE', 'Swagger']
     },
     {
         category: 'Frontend & Mobile',
-        items: ['React', 'Next.js', 'Angular', 'Blazor WASM', 'Material UI']
+        items: ['React', 'Next.js', 'React Native', 'Angular', 'Blazor WASM', 'Material UI']
     },
     {
         category: 'Databases & Tools',
-        items: ['PostgreSQL', 'SQL Server', 'MySQL', 'Prisma', 'Hibernate', 'GitHub', 'Maven']
+        items: ['PostgreSQL', 'SQL Server', 'MySQL', 'Prisma', 'Hibernate', 'Docker', 'GitHub', 'Maven']
     }
 ];
 
