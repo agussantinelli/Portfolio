@@ -13,10 +13,11 @@
 </div>
 
 <p align="center">
-  <a href="https://agussantinelli.github.io/Portfolio/" target="_blank">
-    <b>🌐 Ver Demo en Vivo</b>
-  </a>
+    <a href="https://agussantinelli.github.io/Portfolio/" target="_blank">
+        <img src="https://img.shields.io/badge/🚀%20Ver%20Demo%20en%20Vivo-Portfolio-2ea44f?style=for-the-badge&logo=rocket&logoColor=white" alt="Live Demo Badge"/>
+    </a>
 </p>
+
 
 
 <div align="center">
