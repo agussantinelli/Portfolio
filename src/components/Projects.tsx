@@ -50,19 +50,19 @@ const projects = [
         status: "Work in Progress"
     },
     {
-        title: "Promiedos NBA",
-        descriptionKey: "promiedos" as const,
-        description: "Advanced NBA statistics platform in Spanish. Centralizes live boxscores, historical performance analytics, and franchise wikis with high-performance hybrid rendering.",
-        stack: ["Vue.js", "Node.js", "MySQL", "TypeScript", "Astro Islands"],
-        link: "https://github.com/agussantinelli/Promiedos-NBA-FrontEnd",
-        status: "Work in Progress"
-    },
-    {
         title: "MarketFlex",
         descriptionKey: "marketflex" as const,
         description: "Adaptive E-commerce & Marketplace Ecosystem. A modular core engineered for metamorphosis, adapting to diverse business models without rewriting logic.",
         stack: ["Astro 5", "Hono", "PostgreSQL", "Drizzle ORM", "Node.js 20"],
         link: "https://github.com/agussantinelli/MarketFlex-FrontEnd",
+        status: "Work in Progress"
+    },
+    {
+        title: "Promiedos NBA",
+        descriptionKey: "promiedos" as const,
+        description: "Advanced NBA statistics platform in Spanish. Centralizes live boxscores, historical performance analytics, and franchise wikis with high-performance hybrid rendering.",
+        stack: ["Vue.js", "Node.js", "MySQL", "TypeScript", "Astro Islands"],
+        link: "https://github.com/agussantinelli/Promiedos-NBA-FrontEnd",
         status: "Work in Progress"
     }
 ];
@@ -80,7 +80,6 @@ export default function Projects() {
                     {t.projects.title} <span>{t.projects.titleHighlight}</span>
                 </Typography>
 
-                {/* Layout con Box y Flexbox para 2-3 cards por fila */}
                 <Box
                     sx={{
                         display: 'flex',
@@ -165,12 +164,10 @@ export default function Projects() {
                                 </motion.div>
                             </Box>
 
-                            {/* Break después de card 3 (index 2) - fuerza fila 2 */}
                             {index === 2 && (
                                 <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
                             )}
 
-                            {/* Break después de card 5 (index 4) - fuerza fila 3 */}
                             {index === 4 && (
                                 <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
                             )}
