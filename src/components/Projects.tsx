@@ -61,7 +61,7 @@ const projects = [
         title: "Promiedos NBA",
         descriptionKey: "promiedos" as const,
         description: "Advanced NBA statistics platform in Spanish. Centralizes live boxscores, historical performance analytics, and franchise wikis with high-performance hybrid rendering.",
-        stack: ["Vue.js", "Node.js", "MySQL", "TypeScript", "Astro Islands"],
+        stack: ["Vue.js", "Node.js", "MySQL", "TypeScript", "Express"],
         link: "https://github.com/agussantinelli/Promiedos-NBA-FrontEnd",
         status: "Work in Progress"
     }
