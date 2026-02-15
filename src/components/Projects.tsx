@@ -61,7 +61,7 @@ const projects = [
         title: "MarketFlex",
         descriptionKey: "marketflex" as const,
         description: "Adaptive E-commerce & Marketplace Ecosystem. A modular core engineered for metamorphosis, adapting to diverse business models without rewriting logic.",
-        stack: ["Astro 5", "Express 5", "PostgreSQL", "Drizzle ORM", "Node.js 20"],
+        stack: ["Astro 5", "Hono", "PostgreSQL", "Drizzle ORM", "Node.js 20"],
         link: "https://github.com/agussantinelli/MarketFlex-FrontEnd",
         status: "Work in Progress"
     }
