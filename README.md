@@ -12,6 +12,13 @@
     </a>
 </div>
 
+<p align="center">
+  <a href="https://agussantinelli.github.io/Portfolio/" target="_blank">
+    <b>🌐 Ver Demo en Vivo</b>
+  </a>
+</p>
+
+
 <div align="center">
     <img src="https://img.shields.io/badge/Next.js-15+-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js Badge"/>
     <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge"/>
@@ -20,9 +27,7 @@
     <img src="https://img.shields.io/badge/Mode-Dark-0a192f?style=for-the-badge" alt="Dark Mode Badge"/>
 </div>
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Status-En%20Desarrollo-green?style=for-the-badge" alt="Status Badge">
-</div>
+
 
 <p align="center">
   <b>Bienvenido a mi espacio profesional.</b><br>
