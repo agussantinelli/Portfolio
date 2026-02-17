@@ -6,22 +6,23 @@ import './styles/Skills.css';
 
 const skills = [
     {
-        category: 'Languages',
+        category: 'Languages & Core',
         items: ['TypeScript', 'JavaScript', 'C#', 'Java', 'SQL', 'HTML', 'CSS']
     },
     {
-        category: 'Backend & APIs',
+        category: 'Backend & Architecture',
         items: ['Node.js (Express)', 'ASP.NET Core', 'Spring Boot', 'Jakarta EE', 'Swagger']
     },
     {
-        category: 'Frontend & Mobile',
-        items: ['React', 'Next.js', 'React Native', 'Angular', 'Blazor WASM', 'Material UI']
+        category: 'Frontend, Mobile & Desktop',
+        items: ['React', 'Next.js', 'Astro', 'Angular', 'Blazor WASM', 'React Native', 'Windows Forms', 'Material UI']
     },
     {
-        category: 'Databases & Tools',
+        category: 'Databases & Infrastructure',
         items: ['PostgreSQL', 'SQL Server', 'MySQL', 'Prisma', 'Hibernate', 'Docker', 'GitHub', 'Maven']
     }
 ];
+
 
 export default function Skills() {
     const { t } = useLanguage();
