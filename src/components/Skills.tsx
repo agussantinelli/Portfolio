@@ -11,7 +11,7 @@ const skills = [
     },
     {
         category: 'Backend & Architecture',
-        items: ['Node.js (Express)', 'ASP.NET Core', 'Spring Boot', 'Jakarta EE', 'Swagger']
+        items: ['Node.js', 'Express', 'ASP.NET Core', 'Spring Boot', 'Jakarta EE', 'Swagger']
     },
     {
         category: 'Frontend, Mobile & Desktop',
@@ -19,7 +19,7 @@ const skills = [
     },
     {
         category: 'Databases & Infrastructure',
-        items: ['PostgreSQL', 'SQL Server', 'MySQL', 'Prisma', 'EF Core', 'Hibernate', 'GitHub', 'Docker', 'Maven']
+        items: ['PostgreSQL', 'MySQL', 'SQL Server', 'Prisma', 'EF Core', 'Hibernate', 'GitHub', 'Docker', 'Maven']
     }
 ];
 
