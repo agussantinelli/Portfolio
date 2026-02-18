@@ -45,7 +45,7 @@ const projects = [
         title: "EstacionAR",
         descriptionKey: "estacionar" as const,
         description: "Urban mobility platform transforming parking reservations. Digitalizes traditional operations through real-time geocoding and seamless regional payment integration.",
-        stack: ["React Native", "Docker", "Node.js", "PostgreSQL", "TurboRepo"],
+        stack: ["React Native", "Node.js", "TurboRepo", "TurboRepo", "Prisma"],
         link: "https://github.com/agussantinelli/EstacionAR.git",
         status: "Work in Progress"
     },
