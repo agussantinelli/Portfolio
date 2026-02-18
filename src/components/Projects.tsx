@@ -38,7 +38,7 @@ const projects = [
         title: "ImpulsaMe",
         descriptionKey: "impulsame" as const,
         description: "Secure community-driven crowdfunding platform. Implements a robust project lifecycle state machine and a handcrafted JDBC persistence layer for optimized performance.",
-        stack: ["Java", "Jakarta EE", "MySQL", "Stripe Checkout", "Tomcat"],
+        stack: ["Java", "Jakarta EE", "JSP", "Stripe API", "Apache Tomcat"],
         link: "https://github.com/agussantinelli/ImpulsaMe-Java"
     },
     {
