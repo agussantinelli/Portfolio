@@ -24,7 +24,7 @@ const projects = [
         title: "TicketApp",
         descriptionKey: "ticketapp" as const,
         description: "High-end marketplace for event ticketing. Features a custom SVG-based seat selection engine, secure Stripe integration, and automated e-ticket generation with QR codes.",
-        stack: ["React 19", "Node.js", "Prisma", "MySQL", "Stripe API"],
+        stack: ["React 19", "Node.js", "Express", "Prisma", "Stripe API"],
         link: "https://github.com/agussantinelli/TicketApp-FrontEnd"
     },
     {
