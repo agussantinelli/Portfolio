@@ -19,7 +19,7 @@ const skills = [
     },
     {
         category: 'Databases & Infrastructure',
-        items: ['PostgreSQL', 'MySQL', 'SQL Server', 'Prisma', 'EF Core', 'Hibernate', 'GitHub', 'Docker', 'Maven']
+        items: ['PostgreSQL', 'MySQL', 'SQL Server', 'Prisma', 'EF Core', 'Hibernate', 'ADO.NET', 'GitHub', 'Docker', 'Maven']
     }
 ];
 
