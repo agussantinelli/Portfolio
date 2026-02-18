@@ -17,7 +17,7 @@ const projects = [
         title: "Sysacad Next",
         descriptionKey: "sysacad" as const,
         description: "High-scale reengineering of the legacy UTN academic portal. Eliminates bureaucratic friction through a reactive architecture managing complex academic rules and peak concurrency.",
-        stack: ["Angular 19", "Spring Boot 3.5", "Java 21", "PostgreSQL", "Hibernate"],
+        stack: ["Angular 19", "Spring Boot 3.5", "Java 21", "Hibernate", "Angular Material"],
         link: "https://github.com/agussantinelli/Sysacad-Next-FrontEnd"
     },
     {
