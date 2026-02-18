@@ -31,7 +31,7 @@ const projects = [
         title: "BuyJugador",
         descriptionKey: "buyjugador" as const,
         description: "Comprehensive retail management system for the gaming sector. Synchronizes inventory and sales across Blazor WASM and WinForms using Repository and Unit of Work patterns.",
-        stack: ["C#", ".NET 8", "Blazor WASM", "WinForms", "SQL Server"],
+        stack: ["C#", ".NET 8", "Blazor WASM", "Windows Forms", "EF Core"],
         link: "https://github.com/agussantinelli/ProyectoIDE-BuyJugador"
     },
     {
