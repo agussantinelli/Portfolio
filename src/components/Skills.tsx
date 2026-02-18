@@ -15,7 +15,7 @@ const skills = [
     },
     {
         category: 'Frontend, Mobile & Desktop',
-        items: ['React', 'Next.js', 'Astro', 'Angular', 'Blazor WASM', 'React Native', 'Windows Forms', 'Material UI']
+        items: ['React', 'Angular', 'Astro', 'Next.js', 'Blazor WASM', 'React Native', 'Windows Forms', 'Material UI']
     },
     {
         category: 'Databases & Infrastructure',
