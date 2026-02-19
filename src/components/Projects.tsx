@@ -64,6 +64,14 @@ const projects = [
         stack: ["Vue.js", "Node.js", "Express", "TypeScript", "MySQL"],
         link: "https://github.com/agussantinelli/Promiedos-NBA-FrontEnd",
         status: "Work in Progress"
+    },
+    {
+        title: "VUELTA F1NAL",
+        descriptionKey: "vueltaf1nal" as const,
+        description: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability.",
+        stack: null,
+        link: "https://github.com/agussantinelli/VUELTA-F1NAL-Frontend",
+        status: "Work in Progress"
     }
 ];
 
@@ -135,7 +143,7 @@ export default function Projects() {
                                                 {language === 'en' ? project.description : t.projects.descriptions[project.descriptionKey]}
                                             </Typography>
                                             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.8 }}>
-                                                {project.stack.map((tech) => (
+                                                {project.stack?.map((tech) => (
                                                     <Chip
                                                         key={tech}
                                                         label={tech}
@@ -169,6 +177,10 @@ export default function Projects() {
                             )}
 
                             {index === 4 && (
+                                <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
+                            )}
+
+                            {index === 6 && (
                                 <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
                             )}
                         </React.Fragment>
