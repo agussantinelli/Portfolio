@@ -143,14 +143,23 @@ export default function Projects() {
                                                 {language === 'en' ? project.description : t.projects.descriptions[project.descriptionKey]}
                                             </Typography>
                                             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.8 }}>
-                                                {project.stack?.map((tech) => (
+                                                {project.stack ? (
+                                                    project.stack.map((tech) => (
+                                                        <Chip
+                                                            key={tech}
+                                                            label={tech}
+                                                            size="small"
+                                                            className="tech-chip"
+                                                        />
+                                                    ))
+                                                ) : (
                                                     <Chip
-                                                        key={tech}
-                                                        label={tech}
+                                                        label={t.projects.stackUndefined}
                                                         size="small"
                                                         className="tech-chip"
+                                                        sx={{ fontStyle: 'italic', opacity: 0.7 }}
                                                     />
-                                                ))}
+                                                )}
                                             </Box>
                                         </CardContent>
                                         {project.status && (
