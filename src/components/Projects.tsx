@@ -10,7 +10,7 @@ const projects = [
         title: "FinanzApp",
         descriptionKey: "finanzapp" as const,
         description: "The definitive wealth dashboard for the Argentine investor. Consolidates assets (Crypto, stocks, CEDEARs, bonds) with real-time ARS/USD valuation, integrating AI for intelligent financial data parsing.",
-        stack: ["Next.js 16", "ASP.NET Core 9", "EF Core", "Material UI", "OpenRouter API"],
+        stack: ["Next.js 16", "ASP.NET Core 9", "EF Core", "React", "OpenRouter API"],
         link: "https://github.com/agussantinelli/FinanzApp-FrontEnd"
     },
     {
