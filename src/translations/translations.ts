@@ -26,6 +26,7 @@ export const translations = {
             explore: 'Explore Code',
             wip: 'Work in Progress',
             stackUndefined: 'Stack not defined yet',
+            privateRepo: 'Private Repository',
             descriptions: {
                 finanzapp: 'The definitive wealth dashboard for the Argentine investor. Consolidates assets (Crypto, stocks, CEDEARs, bonds) with real-time ARS/USD valuation, integrating AI for intelligent financial data parsing.',
                 sysacad: 'High-scale reengineering of the legacy UTN academic portal. Eliminates bureaucratic friction through a reactive architecture managing complex academic rules and peak concurrency.',
@@ -76,6 +77,7 @@ export const translations = {
             explore: 'Ver Código',
             wip: 'En Desarrollo',
             stackUndefined: 'Stack no definido aún',
+            privateRepo: 'Repositorio Privado',
             descriptions: {
                 finanzapp: 'El dashboard definitivo de patrimonio para el inversor argentino. Consolida activos (Crypto, acciones, CEDEARs, bonos) con valuación en tiempo real ARS/USD, integrando IA para parsing inteligente de datos financieros.',
                 sysacad: 'Reingeniería a gran escala del portal académico legacy de la UTN. Elimina fricciones burocráticas mediante una arquitectura reactiva que gestiona reglas académicas complejas y concurrencia pico.',

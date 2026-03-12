@@ -2,10 +2,21 @@
 import React from 'react';
 import { Box, Container, Typography, Card, CardContent, CardActions, Button, Chip } from '@mui/material';
 import { motion } from 'framer-motion';
+import { Lock } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 import './styles/Projects.css';
 
-const projects = [
+interface Project {
+    title: string;
+    descriptionKey: "finanzapp" | "sysacad" | "ticketapp" | "buyjugador" | "impulsame" | "estacionar" | "marketflex" | "promiedos" | "vueltaf1nal";
+    description: string;
+    stack: string[] | null;
+    link: string;
+    status?: string;
+    isPrivate?: boolean;
+}
+
+const projects: Project[] = [
     {
         title: "FinanzApp",
         descriptionKey: "finanzapp" as const,
@@ -18,7 +29,8 @@ const projects = [
         descriptionKey: "marketflex" as const,
         description: "Adaptive E-commerce & Marketplace Ecosystem. Engineered a high-performance, polymorphic core designed for structural metamorphosis. Implements the '7-File Blueprint' and Astro's Islands Architecture.",
         stack: ["Astro 5", "Hono", "Vitest", "Drizzle ORM", "React 19"],
-        link: "https://github.com/agussantinelli/MarketFlex-FrontEnd"
+        link: "#",
+        isPrivate: true
     },
     {
         title: "Sysacad Next",
@@ -167,14 +179,31 @@ export default function Projects() {
                                             </Box>
                                         )}
                                         <CardActions sx={{ p: 3, pt: 2 }}>
-                                            <Button
-                                                disableRipple
-                                                href={project.link}
-                                                target="_blank"
-                                                className="btn-explore"
-                                            >
-                                                {t.projects.explore} <span className="arrow">↗</span>
-                                            </Button>
+                                            {project.isPrivate ? (
+                                                <Button
+                                                    disabled
+                                                    className="btn-private"
+                                                    startIcon={<Lock size={16} />}
+                                                    sx={{ 
+                                                        opacity: 0.8, 
+                                                        cursor: 'not-allowed !important',
+                                                        textTransform: 'none',
+                                                        fontWeight: 500,
+                                                        gap: 1
+                                                    }}
+                                                >
+                                                    {t.projects.privateRepo}
+                                                </Button>
+                                            ) : (
+                                                <Button
+                                                    disableRipple
+                                                    href={project.link}
+                                                    target="_blank"
+                                                    className="btn-explore"
+                                                >
+                                                    {t.projects.explore} <span className="arrow">↗</span>
+                                                </Button>
+                                            )}
                                         </CardActions>
                                     </Card>
                                 </motion.div>
