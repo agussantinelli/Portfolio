@@ -184,11 +184,7 @@ export default function Projects() {
                                 <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
                             )}
 
-                            {index === 4 && (
-                                <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
-                            )}
-
-                            {index === 6 && (
+                            {index === 5 && (
                                 <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
                             )}
                         </React.Fragment>
