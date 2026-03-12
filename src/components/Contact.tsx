@@ -3,6 +3,7 @@ import { Box, Container, Typography, Button, IconButton, Stack } from '@mui/mate
 import { motion } from 'framer-motion';
 import { GitHub, LinkedIn, Email } from '@mui/icons-material';
 import { useLanguage } from '@/context/LanguageContext';
+import ContactForm from './ContactForm';
 import './styles/Contact.css';
 
 export default function Contact() {
@@ -39,16 +40,7 @@ export default function Contact() {
                         {t.contact.description}
                     </Typography>
 
-                    <Box sx={{ mt: 6, mb: 8 }}>
-                        <Button
-                            variant="outlined"
-                            size="large"
-                            href="mailto:agustinsantinelli@gmail.com"
-                            className="btn-say-hello"
-                        >
-                            {t.contact.button}
-                        </Button>
-                    </Box>
+                    <ContactForm />
 
                     <Stack
                         direction="row"
