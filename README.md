@@ -124,6 +124,11 @@
             <td>Showcase Dinámico</td>
             <td>Visualización clara de proyectos con filtrado por tecnologías.</td>
         </tr>
+        <tr>
+            <td><strong>Comunicación</strong></td>
+            <td>Mailing Automático</td>
+            <td>Sistema de contacto directo integrado con EmailJS para feedback instantáneo.</td>
+        </tr>
     </tbody>
 </table>
 
