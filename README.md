@@ -22,6 +22,7 @@
     <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge"/>
     <img src="https://img.shields.io/badge/Material%20UI-6-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="MUI Badge"/>
     <img src="https://img.shields.io/badge/Framer%20Motion-11-F01F7A?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion Badge"/>
+    <img src="https://img.shields.io/badge/Lucide%20React-000000?style=for-the-badge&logo=lucide&logoColor=white" alt="Lucide Badge"/>
     <img src="https://img.shields.io/badge/Mode-Dark-0a192f?style=for-the-badge" alt="Dark Mode Badge"/>
 </div>
 
@@ -73,6 +74,11 @@
             <td><strong>Animaciones</strong></td>
             <td>Framer Motion</td>
             <td>Interacciones fluidas y transiciones premium.</td>
+        </tr>
+        <tr>
+            <td><strong>Iconos</strong></td>
+            <td>Lucide React</td>
+            <td>Librería de iconos moderna y ligera.</td>
         </tr>
         <tr>
             <td><strong>Lenguaje</strong></td>
