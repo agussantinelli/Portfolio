@@ -10,16 +10,32 @@ const skills = [
         items: ['TypeScript', 'JavaScript', 'C#', 'Java', 'SQL', 'HTML', 'CSS']
     },
     {
-        category: 'Backend & Architecture',
-        items: ['Node.js', 'Express', 'ASP.NET Core', 'Spring Boot', 'Jakarta EE', 'Swagger']
+        category: 'Backend & Infrastructure',
+        items: ['Node.js', 'Hono', 'Express', 'ASP.NET Core', 'Spring Boot', 'Jakarta EE']
     },
     {
-        category: 'Frontend, Mobile & Desktop',
-        items: ['React', 'Angular', 'Astro', 'Next.js', 'React Native', 'Blazor WASM', 'Windows Forms', 'Material UI']
+        category: 'Frontend & Mobile',
+        items: ['React', 'Astro', 'Next.js', 'Angular', 'React Native', 'Blazor WASM', 'Windows Forms']
     },
     {
-        category: 'Databases & Infrastructure',
-        items: ['PostgreSQL', 'MySQL', 'SQL Server', 'Prisma', 'EF Core', 'Hibernate', 'ADO.NET', 'GitHub', 'Docker', 'Maven']
+        category: 'UI & State',
+        items: ['Nanostores', 'Zustand', 'Material UI', 'CSS Modules', 'Sileo']
+    },
+    {
+        category: 'Strategy, Architecture & Logic',
+        items: ['Clean Architecture', '7-File Blueprint', 'Islands Architecture', 'Modular Monolith', 'Zod (Strict)', 'JWT (Auth)', 'OpenAPI (Swagger)']
+    },
+    {
+        category: 'Databases & ORMs',
+        items: ['PostgreSQL', 'MySQL', 'SQL Server', 'Prisma', 'Drizzle ORM', 'EF Core', 'Hibernate', 'ADO.NET']
+    },
+    {
+        category: 'Testing Ecosystem',
+        items: ['Playwright (E2E)', 'Vitest', 'MSW', 'Faker.js', 'Jest']
+    },
+    {
+        category: 'DevOps & VCS',
+        items: ['GitHub Actions', 'Docker', 'Maven']
     }
 ];
 
