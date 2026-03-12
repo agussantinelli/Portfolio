@@ -43,7 +43,17 @@ export const translations = {
             overline: 'What\'s Next?',
             title: 'Get In Touch.',
             description: 'I\'m currently looking for new opportunities and my inbox is always open. Whether you have a question, a project idea, or just want to say hi, I\'ll try my best to get back to you!',
-            button: 'Say Hello'
+            button: 'Say Hello',
+            form: {
+                name: 'Name',
+                email: 'Email',
+                subject: 'Subject',
+                message: 'Message',
+                send: 'Send Message',
+                sending: 'Sending...',
+                success: 'Message sent successfully! Your inquiry has been delivered. I will get back to you soon.',
+                error: 'Something went wrong. Please try again.'
+            }
         },
         footer: {
             credit: 'Designed & Built by Agustín Santinelli',
@@ -94,7 +104,17 @@ export const translations = {
             overline: '¿Qué Sigue?',
             title: 'Contactame.',
             description: 'Actualmente estoy buscando nuevas oportunidades y mi bandeja de entrada siempre está abierta. Ya sea que tengas una pregunta, una idea de proyecto, o solo quieras saludar, ¡haré mi mejor esfuerzo para responderte!',
-            button: 'Di Hola'
+            button: 'Di Hola',
+            form: {
+                name: 'Nombre',
+                email: 'Email',
+                subject: 'Asunto',
+                message: 'Mensaje',
+                send: 'Enviar Mensaje',
+                sending: 'Enviando...',
+                success: '¡Mensaje enviado con éxito! Tu consulta ha sido entregada. Te responderé a la brevedad.',
+                error: 'Algo salió mal. Por favor intenta de nuevo.'
+            }
         },
         footer: {
             credit: 'Diseñado y Construido por Agustín Santinelli',
