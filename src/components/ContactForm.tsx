@@ -79,7 +79,7 @@ export default function ContactForm() {
     }
 
     return (
-        <Box component="form" ref={form} onSubmit={sendEmail} sx={{ mt: 4, width: '100%', position: 'relative' }}>
+        <Box component="form" ref={form} onSubmit={sendEmail} className="contact-form-container" sx={{ mt: 4, mb: 6, width: '100%', position: 'relative' }}>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
                 <Box sx={{ display: 'flex', gap: 2, flexDirection: { xs: 'column', sm: 'row' } }}>
                     <TextField
