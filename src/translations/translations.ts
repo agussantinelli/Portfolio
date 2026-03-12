@@ -34,7 +34,7 @@ export const translations = {
                 impulsame: 'Secure community-driven crowdfunding platform. Implements a robust project lifecycle state machine and a handcrafted JDBC persistence layer for optimized performance.',
                 estacionar: 'Urban mobility platform transforming parking reservations. Digitalizes traditional operations through real-time geocoding and seamless regional payment integration.',
                 promiedos: 'Advanced NBA statistics platform in Spanish. Centralizes live boxscores, historical performance analytics, and franchise wikis with high-performance hybrid rendering.',
-                marketflex: "Adaptive E-commerce & Marketplace Ecosystem. A modular core engineered for metamorphosis, adapting to diverse business models without rewriting the logic.",
+                marketflex: "Adaptive E-commerce & Marketplace Ecosystem. Engineered a high-performance, polymorphic core designed for total structural metamorphosis. Implements the '7-File Blueprint' and Astro's Islands Architecture for selective hydration and extreme performance.",
                 vueltaf1nal: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability."
             }
         },
@@ -84,7 +84,7 @@ export const translations = {
                 impulsame: 'Plataforma segura de crowdfunding impulsada por la comunidad. Implementa una máquina de estados robusta del ciclo de vida de proyectos y una capa de persistencia JDBC artesanal para rendimiento optimizado.',
                 estacionar: 'Plataforma de movilidad urbana que transforma las reservas de estacionamiento. Digitaliza operaciones tradicionales mediante geocodificación en tiempo real e integración de pagos regionales.',
                 promiedos: 'Plataforma avanzada de estadísticas NBA en español. Centralizar boxscores en vivo, análisis de rendimiento histórico y wikis de franquicias con rendering híbrido de alto rendimiento.',
-                marketflex: "Ecosistema Adaptable de E-commerce y Marketplace. Un núcleo modular diseñado para la metamorfosis, adaptándose a diversos modelos de negocio sin reescribir la lógica.",
+                marketflex: "Ecosistema Adaptable de E-commerce y Marketplace. Núcleo polimórfico de alto rendimiento diseñado para una metamorfosis estructural total. Implementa el '7-File Blueprint' y la Arquitectura de Islas de Astro para lograr hidratación selectiva y rendimiento extremo.",
                 vueltaf1nal: "Plataforma integral de Fórmula 1 que centraliza historia, telemetría y predicciones. Un cerebro digital que procesa décadas de datos para generar modelos predictivos, analizando micro-sectores, factor climático y fiabilidad mecánica."
             }
         },

@@ -52,10 +52,9 @@ const projects = [
     {
         title: "MarketFlex",
         descriptionKey: "marketflex" as const,
-        description: "Adaptive E-commerce & Marketplace Ecosystem. A modular core engineered for metamorphosis, adapting to diverse business models without rewriting logic.",
-        stack: ["Astro 5", "Hono", "PostgreSQL", "Drizzle ORM", "Node.js 20"],
-        link: "https://github.com/agussantinelli/MarketFlex-FrontEnd",
-        status: "Work in Progress"
+        description: "Adaptive E-commerce & Marketplace Ecosystem. Engineered a high-performance, polymorphic core designed for structural metamorphosis. Implements the '7-File Blueprint' and Astro's Islands Architecture.",
+        stack: ["Astro 5", "Hono", "Vitest", "Drizzle ORM", "React 19"],
+        link: "https://github.com/agussantinelli/MarketFlex-FrontEnd"
     },
     {
         title: "Promiedos NBA",
