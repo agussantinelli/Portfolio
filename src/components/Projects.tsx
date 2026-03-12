@@ -14,6 +14,13 @@ const projects = [
         link: "https://github.com/agussantinelli/FinanzApp-FrontEnd"
     },
     {
+        title: "MarketFlex",
+        descriptionKey: "marketflex" as const,
+        description: "Adaptive E-commerce & Marketplace Ecosystem. Engineered a high-performance, polymorphic core designed for structural metamorphosis. Implements the '7-File Blueprint' and Astro's Islands Architecture.",
+        stack: ["Astro 5", "Hono", "Vitest", "Drizzle ORM", "React 19"],
+        link: "https://github.com/agussantinelli/MarketFlex-FrontEnd"
+    },
+    {
         title: "Sysacad Next",
         descriptionKey: "sysacad" as const,
         description: "High-scale reengineering of the legacy UTN academic portal. Eliminates bureaucratic friction through a reactive architecture managing complex academic rules and peak concurrency.",
@@ -48,13 +55,6 @@ const projects = [
         stack: ["React Native", "Node.js", "Docker", "OpenStreetMap API", "Expo"],
         link: "https://github.com/agussantinelli/EstacionAR.git",
         status: "Work in Progress"
-    },
-    {
-        title: "MarketFlex",
-        descriptionKey: "marketflex" as const,
-        description: "Adaptive E-commerce & Marketplace Ecosystem. Engineered a high-performance, polymorphic core designed for structural metamorphosis. Implements the '7-File Blueprint' and Astro's Islands Architecture.",
-        stack: ["Astro 5", "Hono", "Vitest", "Drizzle ORM", "React 19"],
-        link: "https://github.com/agussantinelli/MarketFlex-FrontEnd"
     },
     {
         title: "Promiedos NBA",
