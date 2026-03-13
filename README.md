@@ -25,7 +25,7 @@
     <img src="https://img.shields.io/badge/Lucide%20React-000000?style=for-the-badge&logo=lucide&logoColor=white" alt="Lucide Badge"/>
     <img src="https://img.shields.io/badge/Mode-Dark-0a192f?style=for-the-badge" alt="Dark Mode Badge"/>
     <a href="https://github.com/agussantinelli/Portfolio/actions/workflows/deploy.yml" target="_blank">
-        <img src="https://img.shields.io/badge/GitHub-Deployment-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="Deployment Badge"/>
+        <img src="https://img.shields.io/badge/GitHub-Deployment-050201?style=for-the-badge&logo=github&logoColor=white" alt="Deployment Badge"/>
     </a>
 </div>
 
