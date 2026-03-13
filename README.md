@@ -8,7 +8,7 @@
         <img src="https://img.shields.io/badge/👤%20Contacto-agussantinelli-000000?style=for-the-badge&logo=github&logoColor=white" alt="Contact Badge"/>
     </a>
     <a href="https://github.com/agussantinelli/Portfolio/actions/workflows/deploy.yml" target="_blank">
-        <img src="https://img.shields.io/github/actions/workflow/status/agussantinelli/Portfolio/deploy.yml?style=for-the-badge&logo=github&label=Despliegue&logoColor=white" alt="Deployment Status Badge"/>
+        <img src="https://img.shields.io/badge/GitHub-Deployment-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="Deployment Badge"/>
     </a>
 </div>
 
