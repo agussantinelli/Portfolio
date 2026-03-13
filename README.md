@@ -7,9 +7,6 @@
     <a href="https://github.com/agussantinelli" target="_blank">
         <img src="https://img.shields.io/badge/👤%20Contacto-agussantinelli-000000?style=for-the-badge&logo=github&logoColor=white" alt="Contact Badge"/>
     </a>
-    <a href="https://github.com/agussantinelli/Portfolio/actions/workflows/deploy.yml" target="_blank">
-        <img src="https://img.shields.io/badge/GitHub-Deployment-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="Deployment Badge"/>
-    </a>
 </div>
 
 <p align="center">
@@ -27,6 +24,9 @@
     <img src="https://img.shields.io/badge/Framer%20Motion-11-F01F7A?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion Badge"/>
     <img src="https://img.shields.io/badge/Lucide%20React-000000?style=for-the-badge&logo=lucide&logoColor=white" alt="Lucide Badge"/>
     <img src="https://img.shields.io/badge/Mode-Dark-0a192f?style=for-the-badge" alt="Dark Mode Badge"/>
+    <a href="https://github.com/agussantinelli/Portfolio/actions/workflows/deploy.yml" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-Deployment-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="Deployment Badge"/>
+    </a>
 </div>
 
 <div align="center">
