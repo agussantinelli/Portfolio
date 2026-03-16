@@ -8,7 +8,7 @@ import './styles/Projects.css';
 
 interface Project {
     title: string;
-    descriptionKey: "finanzapp" | "sysacad" | "ticketapp" | "buyjugador" | "impulsame" | "estacionar" | "marketflex" | "promiedos" | "vueltaf1nal" | "gradesync";
+    descriptionKey: "finanzapp" | "sysacad" | "ticketapp" | "buyjugador" | "impulsame" | "estacionar" | "marketflex" | "promiedos" | "vueltaf1nal" | "gradesync" | "finanzapp_desktop";
     description: string;
     stack: string[] | null;
     link: string;
@@ -90,6 +90,14 @@ const projects: Project[] = [
         description: "High-end academic management system engineered with .NET MAUI. Automates complex grade calculations and performance tracking, transforming academic data into intuitive visual insights with local SQLite persistence.",
         stack: [".NET MAUI", "C#"],
         link: "https://github.com/agussantinelli/GradeSync-Desktop",
+        status: "Work in Progress"
+    },
+    {
+        title: "FinanzApp Desktop",
+        descriptionKey: "finanzapp_desktop" as const,
+        description: "High-performance wealth & asset management implementation for Windows 11. Centralizes multi-currency portfolios into a native core driven by SQL Server, delivering real-time analytics with premium Mica & Acrylic UI.",
+        stack: ["WinUI 3", "C#", "EF Core", "SQL Server"],
+        link: "https://github.com/agussantinelli/FinanzApp-Desktop",
         status: "Work in Progress"
     }
 ];
