@@ -36,7 +36,8 @@ export const translations = {
                 estacionar: 'Urban mobility platform transforming parking reservations. Digitalizes traditional operations through real-time geocoding and seamless regional payment integration.',
                 promiedos: 'Advanced NBA statistics platform in Spanish. Centralizes live boxscores, historical performance analytics, and franchise wikis with high-performance hybrid rendering.',
                 marketflex: "Adaptive E-commerce & Marketplace Ecosystem. Engineered a high-performance, polymorphic core designed for total structural metamorphosis. Implements the '7-File Blueprint' and Astro's Islands Architecture for selective hydration and extreme performance.",
-                vueltaf1nal: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability."
+                vueltaf1nal: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability.",
+                gradesync: "High-end academic management system engineered with .NET MAUI. Automates complex grade calculations and performance tracking, transforming academic data into intuitive visual insights with local SQLite persistence."
             }
         },
         contact: {
@@ -97,7 +98,8 @@ export const translations = {
                 estacionar: 'Plataforma de movilidad urbana que transforma las reservas de estacionamiento. Digitaliza operaciones tradicionales mediante geocodificación en tiempo real e integración de pagos regionales.',
                 promiedos: 'Plataforma avanzada de estadísticas NBA en español. Centralizar boxscores en vivo, análisis de rendimiento histórico y wikis de franquicias con rendering híbrido de alto rendimiento.',
                 marketflex: "Ecosistema Adaptable de E-commerce y Marketplace. Núcleo polimórfico de alto rendimiento diseñado para una metamorfosis estructural total. Implementa el '7-File Blueprint' y la Arquitectura de Islas de Astro para lograr hidratación selectiva y rendimiento extremo.",
-                vueltaf1nal: "Plataforma integral de Fórmula 1 que centraliza historia, telemetría y predicciones. Un cerebro digital que procesa décadas de datos para generar modelos predictivos, analizando micro-sectores, factor climático y fiabilidad mecánica."
+                vueltaf1nal: "Plataforma integral de Fórmula 1 que centraliza historia, telemetría y predicciones. Un cerebro digital que procesa décadas de datos para generar modelos predictivos, analizando micro-sectores, factor climático y fiabilidad mecánica.",
+                gradesync: "Sistema de gestión académica de alta gama desarrollado con .NET MAUI. Automatiza cálculos de promedios y seguimiento de desempeño, transformando datos académicos en insights visuales con persistencia local SQLite."
             }
         },
         contact: {

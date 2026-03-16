@@ -8,7 +8,7 @@ import './styles/Projects.css';
 
 interface Project {
     title: string;
-    descriptionKey: "finanzapp" | "sysacad" | "ticketapp" | "buyjugador" | "impulsame" | "estacionar" | "marketflex" | "promiedos" | "vueltaf1nal";
+    descriptionKey: "finanzapp" | "sysacad" | "ticketapp" | "buyjugador" | "impulsame" | "estacionar" | "marketflex" | "promiedos" | "vueltaf1nal" | "gradesync";
     description: string;
     stack: string[] | null;
     link: string;
@@ -82,6 +82,14 @@ const projects: Project[] = [
         description: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability.",
         stack: null,
         link: "https://github.com/agussantinelli/VUELTA-F1NAL-Frontend",
+        status: "Work in Progress"
+    },
+    {
+        title: "GradeSync Desktop",
+        descriptionKey: "gradesync" as const,
+        description: "High-end academic management system engineered with .NET MAUI. Automates complex grade calculations and performance tracking, transforming academic data into intuitive visual insights with local SQLite persistence.",
+        stack: [".NET MAUI", "C#"],
+        link: "https://github.com/agussantinelli/GradeSync-Desktop",
         status: "Work in Progress"
     }
 ];
@@ -184,8 +192,8 @@ export default function Projects() {
                                                     disabled
                                                     className="btn-private"
                                                     startIcon={<Lock size={16} />}
-                                                    sx={{ 
-                                                        opacity: 0.8, 
+                                                    sx={{
+                                                        opacity: 0.8,
                                                         cursor: 'not-allowed !important',
                                                         textTransform: 'none',
                                                         fontWeight: 500,
