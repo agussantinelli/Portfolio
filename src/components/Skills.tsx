@@ -31,7 +31,7 @@ const skills = [
     },
     {
         category: 'Testing Ecosystem',
-        items: ['Playwright (E2E)', 'Vitest', 'MSW', 'Faker.js', 'Jest', 'Jasmine', 'Karma']
+        items: ['Playwright (E2E)', 'Cypress (E2E)', 'Vitest', 'MSW', 'Faker.js', 'Jest', 'Jasmine', 'Karma']
     },
     {
         category: 'DevOps & VCS',
