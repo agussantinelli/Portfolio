@@ -65,30 +65,30 @@ const projects: Project[] = [
         descriptionKey: "estacionar" as const,
         description: "Urban mobility platform transforming parking reservations. Digitalizes traditional operations through real-time geocoding and seamless regional payment integration.",
         stack: ["React Native", "Node.js", "Docker", "OpenStreetMap API", "Expo"],
-        link: "https://github.com/agussantinelli/EstacionAR.git",
+        link: "https://github.com/agussantinelli/EstacionAR",
+        status: "Work in Progress"
+    },
+        {
+        title: "VUELTA F1NAL",
+        descriptionKey: "vueltaf1nal" as const,
+        description: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability.",
+        stack: ["Kotlin", "Jetpack Composse", "Ktor"],
+        link: "https://github.com/agussantinelli/VUELTA-F1NAL",
         status: "Work in Progress"
     },
     {
         title: "Promiedos NBA",
         descriptionKey: "promiedos" as const,
         description: "Advanced NBA statistics platform in Spanish. Centralizes live boxscores, historical performance analytics, and franchise wikis with high-performance hybrid rendering.",
-        stack: ["Vue.js", "Node.js", "Express", "TypeScript", "MySQL"],
+        stack: ["Vue.js", "NestJS", "TypeScript", "TypeORM"],
         link: "https://github.com/agussantinelli/Promiedos-NBA-FrontEnd",
-        status: "Work in Progress"
-    },
-    {
-        title: "VUELTA F1NAL",
-        descriptionKey: "vueltaf1nal" as const,
-        description: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability.",
-        stack: null,
-        link: "https://github.com/agussantinelli/VUELTA-F1NAL-Frontend",
         status: "Work in Progress"
     },
     {
         title: "GradeSync Desktop",
         descriptionKey: "gradesync" as const,
         description: "High-end academic management system engineered with .NET MAUI. Automates complex grade calculations and performance tracking, transforming academic data into intuitive visual insights with local SQLite persistence.",
-        stack: [".NET MAUI", "C#"],
+        stack: [".NET MAUI", "C#", "EF Core", "SQL Server"],
         link: "https://github.com/agussantinelli/GradeSync-Desktop",
         status: "Work in Progress"
     },
