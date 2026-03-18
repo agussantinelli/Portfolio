@@ -88,7 +88,7 @@ const projects: Project[] = [
         title: "GradeSync Desktop",
         descriptionKey: "gradesync" as const,
         description: "High-end academic management system engineered with .NET MAUI. Automates complex grade calculations and performance tracking, transforming academic data into intuitive visual insights with local SQLite persistence.",
-        stack: [".NET MAUI", "C#"],
+        stack: [".NET MAUI", "C#", "EF Core", "SQL Server"],
         link: "https://github.com/agussantinelli/GradeSync-Desktop",
         status: "Work in Progress"
     },
