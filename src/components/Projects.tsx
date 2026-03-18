@@ -68,20 +68,20 @@ const projects: Project[] = [
         link: "https://github.com/agussantinelli/EstacionAR",
         status: "Work in Progress"
     },
+        {
+        title: "VUELTA F1NAL",
+        descriptionKey: "vueltaf1nal" as const,
+        description: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability.",
+        stack: ["Kotlin", "Jetpack Composse", "Ktor"],
+        link: "https://github.com/agussantinelli/VUELTA-F1NAL",
+        status: "Work in Progress"
+    },
     {
         title: "Promiedos NBA",
         descriptionKey: "promiedos" as const,
         description: "Advanced NBA statistics platform in Spanish. Centralizes live boxscores, historical performance analytics, and franchise wikis with high-performance hybrid rendering.",
         stack: ["Vue.js", "Node.js", "Express", "TypeScript", "MySQL"],
         link: "https://github.com/agussantinelli/Promiedos-NBA-FrontEnd",
-        status: "Work in Progress"
-    },
-    {
-        title: "VUELTA F1NAL",
-        descriptionKey: "vueltaf1nal" as const,
-        description: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability.",
-        stack: ["Kotlin", "Jetpack Composse", "Ktor"],
-        link: "https://github.com/agussantinelli/VUELTA-F1NAL",
         status: "Work in Progress"
     },
     {
