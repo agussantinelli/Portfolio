@@ -80,7 +80,7 @@ const projects: Project[] = [
         title: "Promiedos NBA",
         descriptionKey: "promiedos" as const,
         description: "Advanced NBA statistics platform in Spanish. Centralizes live boxscores, historical performance analytics, and franchise wikis with high-performance hybrid rendering.",
-        stack: ["Vue.js", "Node.js", "Express", "TypeScript", "MySQL"],
+        stack: ["Vue.js", "Node.js", "Express", "TypeScript"],
         link: "https://github.com/agussantinelli/Promiedos-NBA-FrontEnd",
         status: "Work in Progress"
     },
