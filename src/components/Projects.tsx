@@ -80,7 +80,7 @@ const projects: Project[] = [
         title: "VUELTA F1NAL",
         descriptionKey: "vueltaf1nal" as const,
         description: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability.",
-        stack: null,
+        stack: ["Kotlin", "Jetpack Composse", "Ktor"],
         link: "https://github.com/agussantinelli/VUELTA-F1NAL-Frontend",
         status: "Work in Progress"
     },
