@@ -65,7 +65,8 @@ const projects: Project[] = [
         descriptionKey: "estacionar" as const,
         description: "Urban mobility platform transforming parking reservations. Digitalizes traditional operations through real-time geocoding and seamless regional payment integration.",
         stack: ["React Native", "Node.js", "Docker", "OpenStreetMap API", "Expo"],
-        link: "https://github.com/agussantinelli/EstacionAR",
+        link: "#",
+        isPrivate: true
         status: "Work in Progress"
     },
         {
