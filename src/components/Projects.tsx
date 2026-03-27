@@ -73,7 +73,7 @@ const projects: Project[] = [
         title: "VUELTA F1NAL",
         descriptionKey: "vueltaf1nal" as const,
         description: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability.",
-        stack: ["Kotlin", "Jetpack Compose", "Ktor"],
+        stack: ["Kotlin", "Jetpack Compose", "Ktor", "Gradle", "Android"],
         link: "https://github.com/agussantinelli/VUELTA-F1NAL",
         status: "Work in Progress"
     },
@@ -81,7 +81,7 @@ const projects: Project[] = [
         title: "GitData",
         descriptionKey: "gitdata" as const,
         description: "Full-stack analytical engine that transforms a raw GitHub profile into an interactive 'Technical Sheet'. Goes beyond listing repos to narrate a developer's technical evolution through data-driven visualizations and algorithmic curation.",
-        stack: ["Vue 3", "Vite", "TypeScript", "NestJS", "PrimeVue", "Apache ECharts", "Redis"],
+        stack: ["Vue 3", "Vite", "TypeScript", "NestJS", "PrimeVue"],
         link: "https://github.com/agussantinelli/GitData-FrontEnd",
         status: "Work in Progress"
     },
@@ -89,7 +89,7 @@ const projects: Project[] = [
         title: "Promiedos NBA",
         descriptionKey: "promiedos" as const,
         description: "Advanced NBA statistics platform in Spanish. Centralizes live boxscores, historical performance analytics, and franchise wikis with high-performance hybrid rendering.",
-        stack: ["SvelteKit 2", "Svelte 5", "TypeScript", "Fastify", "PostgreSQL", "Drizzle ORM"],
+        stack: ["SvelteKit 2", "Svelte 5", "TypeScript", "Fastify", "Drizzle ORM"],
         link: "https://github.com/agussantinelli/Promiedos-NBA-FrontEnd",
         status: "Work in Progress"
     },
