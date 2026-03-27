@@ -8,7 +8,7 @@ import './styles/Projects.css';
 
 interface Project {
     title: string;
-    descriptionKey: "finanzapp" | "sysacad" | "ticketapp" | "buyjugador" | "impulsame" | "estacionar" | "marketflex" | "promiedos" | "vueltaf1nal" | "gradesync" | "finanzapp_desktop";
+    descriptionKey: "finanzapp" | "sysacad" | "ticketapp" | "buyjugador" | "impulsame" | "estacionar" | "marketflex" | "promiedos" | "vueltaf1nal" | "gradesync" | "finanzapp_desktop" | "gitdata";
     description: string;
     stack: string[] | null;
     link: string;
@@ -69,28 +69,28 @@ const projects: Project[] = [
         isPrivate: true,
         status: "Work in Progress"
     },
-        {
+    {
         title: "VUELTA F1NAL",
         descriptionKey: "vueltaf1nal" as const,
         description: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability.",
-        stack: ["Kotlin", "Jetpack Composse", "Ktor"],
+        stack: ["Kotlin", "Jetpack Compose", "Ktor"],
         link: "https://github.com/agussantinelli/VUELTA-F1NAL",
+        status: "Work in Progress"
+    },
+    {
+        title: "GitData",
+        descriptionKey: "gitdata" as const,
+        description: "Full-stack analytical engine that transforms a raw GitHub profile into an interactive 'Technical Sheet'. Goes beyond listing repos to narrate a developer's technical evolution through data-driven visualizations and algorithmic curation.",
+        stack: ["Vue 3", "Vite", "TypeScript", "NestJS", "PrimeVue", "Apache ECharts", "Redis"],
+        link: "https://github.com/agussantinelli/GitData-FrontEnd",
         status: "Work in Progress"
     },
     {
         title: "Promiedos NBA",
         descriptionKey: "promiedos" as const,
         description: "Advanced NBA statistics platform in Spanish. Centralizes live boxscores, historical performance analytics, and franchise wikis with high-performance hybrid rendering.",
-        stack: ["Vue.js", "NestJS", "TypeScript", "TypeORM"],
+        stack: ["SvelteKit 2", "Svelte 5", "TypeScript", "Fastify", "PostgreSQL", "Drizzle ORM"],
         link: "https://github.com/agussantinelli/Promiedos-NBA-FrontEnd",
-        status: "Work in Progress"
-    },
-    {
-        title: "GradeSync Desktop",
-        descriptionKey: "gradesync" as const,
-        description: "High-end academic management system engineered with .NET MAUI. Automates complex grade calculations and performance tracking, transforming academic data into intuitive visual insights with local SQLite persistence.",
-        stack: [".NET MAUI", "C#", "EF Core", "SQL Server"],
-        link: "https://github.com/agussantinelli/GradeSync-Desktop",
         status: "Work in Progress"
     },
     {
@@ -99,6 +99,14 @@ const projects: Project[] = [
         description: "High-performance wealth & asset management implementation for Windows 11. Centralizes multi-currency portfolios into a native core driven by SQL Server, delivering real-time analytics with premium Mica & Acrylic UI.",
         stack: ["WinUI 3", "C#", "EF Core", "SQL Server"],
         link: "https://github.com/agussantinelli/FinanzApp-Desktop",
+        status: "Work in Progress"
+    },
+    {
+        title: "GradeSync Desktop",
+        descriptionKey: "gradesync" as const,
+        description: "High-end academic management system engineered with .NET MAUI. Automates complex grade calculations and performance tracking, transforming academic data into intuitive visual insights with local SQLite persistence.",
+        stack: [".NET MAUI", "C#", "EF Core", "SQL Server"],
+        link: "https://github.com/agussantinelli/GradeSync-Desktop",
         status: "Work in Progress"
     }
 ];
