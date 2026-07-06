@@ -61,7 +61,7 @@ const projects: Project[] = [
         link: "https://github.com/agussantinelli/ImpulsaMe-Java"
     },
     {
-        title: "Ahorcado TDD",
+        title: "Ahorcado",
         descriptionKey: "ahorcado" as const,
         description: "A modern, interactive, and reactive version of the classic Hangman game, conceived as an integrative university project to showcase rigorous software engineering practices.",
         stack: ["TypeScript", "HTML5/CSS3", "Vite", "TDD", "ATDD"],
