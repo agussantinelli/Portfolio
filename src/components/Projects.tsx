@@ -8,7 +8,7 @@ import './styles/Projects.css';
 
 interface Project {
     title: string;
-    descriptionKey: "finanzapp" | "sysacad" | "ticketapp" | "buyjugador" | "impulsame" | "estacionar" | "marketflex" | "promiedos" | "vueltaf1nal" | "gradesync" | "finanzapp_desktop" | "gitdata";
+    descriptionKey: "finanzapp" | "sysacad" | "ticketapp" | "buyjugador" | "impulsame" | "estacionar" | "marketflex" | "promiedos" | "vueltaf1nal" | "gradesync" | "finanzapp_desktop" | "gitdata" | "ahorcado";
     description: string;
     stack: string[] | null;
     link: string;
@@ -59,6 +59,13 @@ const projects: Project[] = [
         description: "Secure community-driven crowdfunding platform. Implements a robust project lifecycle state machine and a handcrafted JDBC persistence layer for optimized performance.",
         stack: ["Java", "Jakarta EE", "JSP", "Apache Tomcat", "Stripe API"],
         link: "https://github.com/agussantinelli/ImpulsaMe-Java"
+    },
+    {
+        title: "Ahorcado TDD",
+        descriptionKey: "ahorcado" as const,
+        description: "A modern, interactive, and reactive version of the classic Hangman game, conceived as an integrative university project to showcase rigorous software engineering practices.",
+        stack: ["TypeScript", "HTML5/CSS3", "Vite", "TDD", "ATDD"],
+        link: "https://github.com/martin-ratti/TP-Ahorcado"
     },
     {
         title: "EstacionAR",
@@ -234,11 +241,8 @@ export default function Projects() {
                                 </motion.div>
                             </Box>
 
-                            {index === 2 && (
-                                <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
-                            )}
-
-                            {index === 5 && (
+                            {/* 3-2-2 Layout for Finished (indices 0..6) & 3-3 Layout for WIP (indices 7..12) */}
+                            {(index === 2 || index === 4 || index === 6 || index === 9) && (
                                 <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
                             )}
                         </React.Fragment>
