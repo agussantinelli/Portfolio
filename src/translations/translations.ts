@@ -39,7 +39,8 @@ export const translations = {
                 vueltaf1nal: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability.",
                 gitdata: "Full-stack analytical engine that transforms a raw GitHub profile into an interactive 'Technical Sheet'. Goes beyond listing repos to narrate a developer's technical evolution through data-driven visualizations and algorithmic curation of language profiling and Jewel Project detection.",
                 gradesync: "High-end academic management system engineered with .NET MAUI. Automates complex grade calculations and performance tracking, transforming academic data into intuitive visual insights with local SQLite persistence.",
-                finanzapp_desktop: "High-performance wealth & asset management implementation for Windows 11. Centralizes multi-currency portfolios into a native core driven by SQL Server, delivering real-time analytics with premium Mica & Acrylic UI."
+                finanzapp_desktop: "High-performance wealth & asset management implementation for Windows 11. Centralizes multi-currency portfolios into a native core driven by SQL Server, delivering real-time analytics with premium Mica & Acrylic UI.",
+                ahorcado: "A modern, interactive, and reactive version of the classic Hangman game, conceived as an integrative university project to showcase rigorous software engineering practices. Built as a practical implementation of Double Loop TDD, BDD, and Clean Architecture."
             }
         },
         contact: {
@@ -103,7 +104,8 @@ export const translations = {
                 vueltaf1nal: "Plataforma integral de Fórmula 1 que centraliza historia, telemetría y predicciones. Un cerebro digital que procesa décadas de datos para generar modelos predictivos, analizando micro-sectores, factor climático y fiabilidad mecánica.",
                 gitdata: "Motor analítico full-stack que transforma un perfil de GitHub en una 'Ficha Técnica' interactiva. Más que listar repositorios, narra la evolución técnica del desarrollador mediante visualizaciones basadas en datos y detección algorítmica de Proyectos Joya.",
                 gradesync: "Sistema de gestión académica de alta gama desarrollado con .NET MAUI. Automatiza cálculos de promedios y seguimiento de desempeño, transformando datos académicos en insights visuales con persistencia local SQLite.",
-                finanzapp_desktop: "Implementación de alto rendimiento para gestión de patrimonio en Windows 11. Centraliza portafolios multi-moneda en un núcleo nativo SQL Server, con analíticas en tiempo real y UI premium con Mica y Acrylic."
+                finanzapp_desktop: "Implementación de alto rendimiento para gestión de patrimonio en Windows 11. Centraliza portafolios multi-moneda en un núcleo nativo SQL Server, con analíticas en tiempo real y UI premium con Mica y Acrylic.",
+                ahorcado: "Una versión moderna, interactiva y reactiva del clásico juego del Ahorcado, concebida como un proyecto universitario integrador para exhibir prácticas rigurosas de ingeniería de software. Construido como una implementación práctica de Double Loop TDD, BDD y Arquitectura Limpia."
             }
         },
         contact: {
