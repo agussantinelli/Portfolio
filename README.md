@@ -89,6 +89,11 @@
             <td>Tipado estricto para un desarrollo más robusto.</td>
         </tr>
         <tr>
+            <td><strong>Package Manager</strong></td>
+            <td>pnpm</td>
+            <td>Gestor de dependencias ultrarrápido y eficiente.</td>
+        </tr>
+        <tr>
             <td><strong>Despliegue</strong></td>
             <td>GitHub Pages</td>
             <td>Hosting estático confiable y gratuito.</td>
