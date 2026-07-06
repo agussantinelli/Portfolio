@@ -36,6 +36,14 @@ const skills = [
     {
         category: 'DevOps & VCS',
         items: ['GitHub Actions', 'Docker', 'Maven']
+    },
+    {
+        category: 'Software Engineering',
+        items: ['TDD', 'ATDD', 'BDD', 'Clean Code principles']
+    },
+    {
+        category: 'Agile & Workflows',
+        items: ['Kanban', 'Semantic Commits', 'Role Rotation', 'CI/CD pipelines']
     }
 ];
 
