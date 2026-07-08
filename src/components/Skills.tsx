@@ -34,8 +34,8 @@ const skills = [
         items: ['Playwright (E2E)', 'Cypress (E2E)', 'Vitest', 'MSW', 'Faker.js', 'Jest', 'xUnit', 'Jasmine', 'Karma','JUnit', 'Mockito']
     },
     {
-        category: 'DevOps & VCS',
-        items: ['GitHub Actions', 'Docker', 'Maven']
+        category: 'DevOps & Deployment',
+        items: ['GitHub Actions', 'Docker', 'Maven', 'Railway', 'Vercel', 'SonarQube']
     },
     {
         category: 'Software Engineering',
