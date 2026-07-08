@@ -87,10 +87,9 @@ const projects: Project[] = [
     {
         title: "GitData",
         descriptionKey: "gitdata" as const,
-        description: "Full-stack analytical engine that transforms a raw GitHub profile into an interactive 'Technical Sheet'. Goes beyond listing repos to narrate a developer's technical evolution through data-driven visualizations and algorithmic curation.",
-        stack: ["Vue 3", "Vite", "TypeScript", "NestJS", "PrimeVue"],
-        link: "https://github.com/agussantinelli/GitData-FrontEnd",
-        status: "Work in Progress"
+        description: "Full-stack analytical engine that extracts a developer's true 'Technical DNA'. Combines mathematical inference in Fastify and GraphQL queries to expose specialization patterns, achievements, and 'hidden gems' through interactive widgets and dynamic SVGs.",
+        stack: ["React 19", "Fastify", "TypeScript", "Vite", "GraphQL API"],
+        link: "https://github.com/agussantinelli/gitdata"
     },
     {
         title: "Promiedos NBA",
