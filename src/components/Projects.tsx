@@ -47,6 +47,13 @@ const projects: Project[] = [
         link: "https://github.com/agussantinelli/TicketApp-FrontEnd"
     },
     {
+        title: "GitData",
+        descriptionKey: "gitdata" as const,
+        description: "Full-stack analytical engine that extracts a developer's true 'Technical DNA'. Combines mathematical inference in Fastify and GraphQL queries to expose specialization patterns, achievements, and 'hidden gems' through interactive widgets and dynamic SVGs.",
+        stack: ["React 19", "Fastify", "TypeScript", "Vite", "GraphQL API"],
+        link: "https://github.com/agussantinelli/gitdata"
+    },
+    {
         title: "BuyJugador",
         descriptionKey: "buyjugador" as const,
         description: "Comprehensive retail management system for the gaming sector. Synchronizes inventory and sales across Blazor WASM and WinForms using Repository and Unit of Work patterns.",
@@ -83,13 +90,6 @@ const projects: Project[] = [
         stack: ["Kotlin", "Jetpack Compose", "Ktor", "Gradle", "Android"],
         link: "https://github.com/agussantinelli/VUELTA-F1NAL",
         status: "Work in Progress"
-    },
-    {
-        title: "GitData",
-        descriptionKey: "gitdata" as const,
-        description: "Full-stack analytical engine that extracts a developer's true 'Technical DNA'. Combines mathematical inference in Fastify and GraphQL queries to expose specialization patterns, achievements, and 'hidden gems' through interactive widgets and dynamic SVGs.",
-        stack: ["React 19", "Fastify", "TypeScript", "Vite", "GraphQL API"],
-        link: "https://github.com/agussantinelli/gitdata"
     },
     {
         title: "Promiedos NBA",
@@ -240,8 +240,8 @@ export default function Projects() {
                                 </motion.div>
                             </Box>
 
-                            {/* 3-2-2 Layout for Finished (indices 0..6) & 3-3 Layout for WIP (indices 7..12) */}
-                            {(index === 2 || index === 4 || index === 6 || index === 9) && (
+                            {/* 3-3-2-3-2 Layout */}
+                            {(index === 2 || index === 5 || index === 7 || index === 10) && (
                                 <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
                             )}
                         </React.Fragment>
