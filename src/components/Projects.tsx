@@ -33,6 +33,14 @@ const projects: Project[] = [
         isPrivate: true
     },
     {
+        title: "EstacionAR",
+        descriptionKey: "estacionar" as const,
+        description: "Urban mobility platform transforming parking reservations. Digitalizes traditional operations through real-time geocoding and seamless regional payment integration.",
+        stack: ["React Native", "Node.js", "Docker", "OpenStreetMap API", "Expo"],
+        link: "#",
+        isPrivate: true,
+    },
+    {
         title: "Sysacad Next",
         descriptionKey: "sysacad" as const,
         description: "High-scale reengineering of the legacy UTN academic portal. Eliminates bureaucratic friction through a reactive architecture managing complex academic rules and peak concurrency.",
@@ -73,15 +81,6 @@ const projects: Project[] = [
         description: "A modern, interactive, and reactive version of the classic Hangman game, conceived as an integrative university project to showcase rigorous software engineering practices.",
         stack: ["TypeScript", "HTML5/CSS3", "Vite", "TDD", "ATDD"],
         link: "https://github.com/martin-ratti/TP-Ahorcado"
-    },
-    {
-        title: "EstacionAR",
-        descriptionKey: "estacionar" as const,
-        description: "Urban mobility platform transforming parking reservations. Digitalizes traditional operations through real-time geocoding and seamless regional payment integration.",
-        stack: ["React Native", "Node.js", "Docker", "OpenStreetMap API", "Expo"],
-        link: "#",
-        isPrivate: true,
-        status: "Work in Progress"
     },
     {
         title: "VUELTA F1NAL",
@@ -240,8 +239,8 @@ export default function Projects() {
                                 </motion.div>
                             </Box>
 
-                            {/* 3-3-2-3-2 Layout */}
-                            {(index === 2 || index === 5 || index === 7 || index === 10) && (
+                            {/* 3-3-3-2-2 Layout */}
+                            {(index === 2 || index === 5 || index === 8 || index === 10) && (
                                 <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
                             )}
                         </React.Fragment>
