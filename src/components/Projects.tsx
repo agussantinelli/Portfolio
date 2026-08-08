@@ -103,7 +103,8 @@ const projects: Project[] = [
         descriptionKey: "finanzapp_desktop" as const,
         description: "High-performance wealth & asset management implementation for Windows 11. Centralizes multi-currency portfolios into a native core driven by SQL Server, delivering real-time analytics with premium Mica & Acrylic UI.",
         stack: ["WinUI 3", "C#", "EF Core", "SQL Server"],
-        link: "https://github.com/agussantinelli/FinanzApp-Desktop",
+        link: "#",
+        isPrivate: true,
         status: "Work in Progress"
     },
     {
