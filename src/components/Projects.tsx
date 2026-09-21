@@ -22,7 +22,8 @@ const projects: Project[] = [
         descriptionKey: "finanzapp" as const,
         description: "The definitive wealth dashboard for the Argentine investor. Consolidates assets (Crypto, stocks, CEDEARs, bonds) with real-time ARS/USD valuation, integrating AI for intelligent financial data parsing.",
         stack: ["Next.js 16", "ASP.NET Core 9", "EF Core", "React", "OpenRouter API"],
-        link: "https://github.com/agussantinelli/FinanzApp-FrontEnd"
+        link: "#",
+        isPrivate: true
     },
     {
         title: "MarketFlex",
@@ -31,6 +32,14 @@ const projects: Project[] = [
         stack: ["Astro 5", "Hono", "Vitest", "Drizzle ORM", "React 19"],
         link: "#",
         isPrivate: true
+    },
+    {
+        title: "EstacionAR",
+        descriptionKey: "estacionar" as const,
+        description: "Urban mobility platform transforming parking reservations. Digitalizes traditional operations through real-time geocoding and seamless regional payment integration.",
+        stack: ["React Native", "Node.js", "Docker", "OpenStreetMap API", "Expo"],
+        link: "#",
+        isPrivate: true,
     },
     {
         title: "Sysacad Next",
@@ -75,15 +84,6 @@ const projects: Project[] = [
         link: "https://github.com/martin-ratti/TP-Ahorcado"
     },
     {
-        title: "EstacionAR",
-        descriptionKey: "estacionar" as const,
-        description: "Urban mobility platform transforming parking reservations. Digitalizes traditional operations through real-time geocoding and seamless regional payment integration.",
-        stack: ["React Native", "Node.js", "Docker", "OpenStreetMap API", "Expo"],
-        link: "#",
-        isPrivate: true,
-        status: "Work in Progress"
-    },
-    {
         title: "VUELTA F1NAL",
         descriptionKey: "vueltaf1nal" as const,
         description: "The ultimate F1 platform centralizing history, live telemetry, and a sophisticated prediction engine. Processes decades of data to generate race models, analyzing micro-sectors, weather impact, and mechanical reliability.",
@@ -104,7 +104,8 @@ const projects: Project[] = [
         descriptionKey: "finanzapp_desktop" as const,
         description: "High-performance wealth & asset management implementation for Windows 11. Centralizes multi-currency portfolios into a native core driven by SQL Server, delivering real-time analytics with premium Mica & Acrylic UI.",
         stack: ["WinUI 3", "C#", "EF Core", "SQL Server"],
-        link: "https://github.com/agussantinelli/FinanzApp-Desktop",
+        link: "#",
+        isPrivate: true,
         status: "Work in Progress"
     },
     {
@@ -240,8 +241,8 @@ export default function Projects() {
                                 </motion.div>
                             </Box>
 
-                            {/* 3-3-2-3-2 Layout */}
-                            {(index === 2 || index === 5 || index === 7 || index === 10) && (
+                            {/* 3-3-3-2-2 Layout */}
+                            {(index === 2 || index === 5 || index === 8 || index === 10) && (
                                 <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
                             )}
                         </React.Fragment>
