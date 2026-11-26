@@ -8,7 +8,7 @@ import './styles/Projects.css';
 
 interface Project {
     title: string;
-    descriptionKey: "finanzapp" | "sysacad" | "ticketapp" | "buyjugador" | "impulsame" | "estacionar" | "marketflex" | "promiedos" | "vueltaf1nal" | "gradesync" | "finanzapp_desktop" | "gitdata" | "ahorcado";
+    descriptionKey: "finanzapp" | "sysacad" | "ticketapp" | "buyjugador" | "impulsame"  | "actions-by-signs" | "estacionar" | "marketflex" | "promiedos" | "vueltaf1nal" | "gradesync" | "finanzapp_desktop" | "gitdata" | "ahorcado";
     description: string;
     stack: string[] | null;
     link: string;
@@ -82,6 +82,15 @@ const projects: Project[] = [
         description: "A modern, interactive, and reactive version of the classic Hangman game, conceived as an integrative university project to showcase rigorous software engineering practices.",
         stack: ["TypeScript", "HTML5/CSS3", "Vite", "TDD", "ATDD"],
         link: "https://github.com/martin-ratti/TP-Ahorcado"
+    },
+    {
+        title: "Actions By Signs",
+        descriptionKey: "actions-by-signs" as const,
+        description: "Real-time Computer Vision and AI gesture engine turning standard webcams into touchless interfaces. Detects dual hands, eye gaze, body posture, and geometric shapes simultaneously, mapping stable visual signs to configurable system actions.",
+        stack: ["Python 3.11", "OpenCV 5.1", "MediaPipe", "NumPy", "uv"],
+        link: "#",
+        isPrivate: true,
+        status: "Work in Progress"
     },
     {
         title: "VUELTA F1NAL",
@@ -241,8 +250,8 @@ export default function Projects() {
                                 </motion.div>
                             </Box>
 
-                            {/* 3-3-3-2-2 Layout */}
-                            {(index === 2 || index === 5 || index === 8 || index === 10) && (
+                            {/* 3-3-3-3-2 Layout */}
+                            {(index === 2 || index === 5 || index === 8 || index === 11) && (
                                 <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
                             )}
                         </React.Fragment>
