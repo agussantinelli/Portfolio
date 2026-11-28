@@ -41,6 +41,7 @@ export const translations = {
                 gradesync: "High-end academic management system engineered with .NET MAUI. Automates complex grade calculations and performance tracking, transforming academic data into intuitive visual insights with local SQLite persistence.",
                 finanzapp_desktop: "High-performance wealth & asset management implementation for Windows 11. Centralizes multi-currency portfolios into a native core driven by SQL Server, delivering real-time analytics with premium Mica & Acrylic UI.",
                 "actions-by-signs": "Real-time Computer Vision & HCI engine turning standard webcams into touchless desktop interfaces. Combines dual-hand, face/iris, posture, and shape tracking to power 2D/3D air canvases, Air Mouse & blink control, and System Tray automation with Eco throttling.",
+                "data-by-frames": "Real-time Computer Vision & AI engine analyzing live screen capture and video streams to track multiple objects with persistent IDs. Extracts quantitative analytics for urban traffic and sports scenes, including speed estimation, team classification, and 2D homography minimaps.",
                 ahorcado: "A modern, interactive, and reactive version of the classic Hangman game, conceived as an integrative university project to showcase rigorous software engineering practices. Built as a practical implementation of Double Loop TDD, BDD, and Clean Architecture."
             }
         },
@@ -107,7 +108,8 @@ export const translations = {
                 gradesync: "Sistema de gestión académica de alta gama desarrollado con .NET MAUI. Automatiza cálculos de promedios y seguimiento de desempeño, transformando datos académicos en insights visuales con persistencia local SQLite.",
                 finanzapp_desktop: "Implementación de alto rendimiento para gestión de patrimonio en Windows 11. Centraliza portafolios multi-moneda en un núcleo nativo SQL Server, con analíticas en tiempo real y UI premium con Mica y Acrylic.",
                 ahorcado: "Una versión moderna, interactiva y reactiva del clásico juego del Ahorcado, concebida como un proyecto universitario integrador para exhibir prácticas rigurosas de ingeniería de software. Construido como una implementación práctica de Double Loop TDD, BDD y Arquitectura Limpia.",
-                "actions-by-signs": "Motor de Visión por Computadora e interacción humano-computadora en tiempo real que convierte cámaras web comunes en interfaces de escritorio sin contacto. Combina detección de manos, rostro/iris, postura y formas para impulsar lienzos 2D/3D en el aire, Air Mouse, control por parpadeo y automatización en bandeja del sistema con modo Eco."
+                "actions-by-signs": "Motor de Visión por Computadora e interacción humano-computadora en tiempo real que convierte cámaras web comunes en interfaces de escritorio sin contacto. Combina detección de manos, rostro/iris, postura y formas para impulsar lienzos 2D/3D en el aire, Air Mouse, control por parpadeo y automatización en bandeja del sistema con modo Eco.",
+                "data-by-frames": "Motor de Visión por Computadora e IA en tiempo real que analiza video y captura de pantalla en vivo para detectar y seguir múltiples objetos con IDs persistentes. Extrae analítica cuantitativa en escenas de tráfico urbano y deportes, incluyendo velocidad, clasificación de equipos y minimapas por homografía 2D."
             }
         },
         contact: {

@@ -8,7 +8,7 @@ import './styles/Projects.css';
 
 interface Project {
     title: string;
-    descriptionKey: "finanzapp" | "sysacad" | "ticketapp" | "buyjugador" | "impulsame"  | "actions-by-signs" | "estacionar" | "marketflex" | "promiedos" | "vueltaf1nal" | "gradesync" | "finanzapp_desktop" | "gitdata" | "ahorcado";
+    descriptionKey: "finanzapp" | "sysacad" | "ticketapp" | "buyjugador" | "impulsame" | "actions-by-signs" | "data-by-frames" | "estacionar" | "marketflex" | "promiedos" | "vueltaf1nal" | "gradesync" | "finanzapp_desktop" | "gitdata" | "ahorcado";
     description: string;
     stack: string[] | null;
     link: string;
@@ -122,6 +122,15 @@ const projects: Project[] = [
         description: "High-end academic management system engineered with .NET MAUI. Automates complex grade calculations and performance tracking, transforming academic data into intuitive visual insights with local SQLite persistence.",
         stack: [".NET MAUI", "C#", "EF Core", "SQL Server"],
         link: "https://github.com/agussantinelli/GradeSync-Desktop",
+        status: "Work in Progress"
+    },
+    {
+        title: "Data By Frames",
+        descriptionKey: "data-by-frames" as const,
+        description: "Real-time Computer Vision & AI engine analyzing live screen capture and video streams to track multiple objects with persistent IDs. Extracts quantitative analytics for urban traffic and sports scenes, including speed estimation, team classification, and 2D homography minimaps.",
+        stack: ["Python 3.11", "OpenCV 5.1", "MediaPipe", "NumPy", "pytest"],
+        link: "#",
+        isPrivate: true,
         status: "Work in Progress"
     }
 ];
@@ -249,8 +258,8 @@ export default function Projects() {
                                 </motion.div>
                             </Box>
 
-                            {/* 3-3-3-3-2 Layout */}
-                            {(index === 2 || index === 5 || index === 8 || index === 11) && (
+                                {/* 3-3-2-2-3-2 Layout */ }
+                            {(index === 2 || index === 5 || index === 7 || index === 9 || index === 12) && (
                                 <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
                             )}
                         </React.Fragment>
