@@ -40,7 +40,7 @@ export const translations = {
                 gitdata: "Full-stack analytical engine that extracts a developer's true 'Technical DNA'. Combines mathematical inference in Fastify and GraphQL queries to expose specialization patterns, achievements, and 'hidden gems' through interactive widgets and dynamic SVGs.",
                 gradesync: "High-end academic management system engineered with .NET MAUI. Automates complex grade calculations and performance tracking, transforming academic data into intuitive visual insights with local SQLite persistence.",
                 finanzapp_desktop: "High-performance wealth & asset management implementation for Windows 11. Centralizes multi-currency portfolios into a native core driven by SQL Server, delivering real-time analytics with premium Mica & Acrylic UI.",
-                "actions-by-signs" : "Real-time Computer Vision and AI gesture engine turning standard webcams into touchless interfaces. Detects dual hands, eye gaze, body posture, and geometric shapes simultaneously, mapping stable visual signs to configurable system actions.",
+                "actions-by-signs": "Real-time Computer Vision & HCI engine turning standard webcams into touchless desktop interfaces. Combines dual-hand, face/iris, posture, and shape tracking to power 2D/3D air canvases, Air Mouse & blink control, and System Tray automation with Eco throttling.",
                 ahorcado: "A modern, interactive, and reactive version of the classic Hangman game, conceived as an integrative university project to showcase rigorous software engineering practices. Built as a practical implementation of Double Loop TDD, BDD, and Clean Architecture."
             }
         },
@@ -107,7 +107,7 @@ export const translations = {
                 gradesync: "Sistema de gestión académica de alta gama desarrollado con .NET MAUI. Automatiza cálculos de promedios y seguimiento de desempeño, transformando datos académicos en insights visuales con persistencia local SQLite.",
                 finanzapp_desktop: "Implementación de alto rendimiento para gestión de patrimonio en Windows 11. Centraliza portafolios multi-moneda en un núcleo nativo SQL Server, con analíticas en tiempo real y UI premium con Mica y Acrylic.",
                 ahorcado: "Una versión moderna, interactiva y reactiva del clásico juego del Ahorcado, concebida como un proyecto universitario integrador para exhibir prácticas rigurosas de ingeniería de software. Construido como una implementación práctica de Double Loop TDD, BDD y Arquitectura Limpia.",
-                "actions-by-signs": "Motor de Visión por Computadora e IA en tiempo real que convierte una cámara web común en una interfaz sin contacto. Detecta simultáneamente ambas manos, mirada ocular, postura corporal y formas geométricas, traduciendo señas estables en acciones configurables del sistema."
+                "actions-by-signs": "Motor de Visión por Computadora e interacción humano-computadora en tiempo real que convierte cámaras web comunes en interfaces de escritorio sin contacto. Combina detección de manos, rostro/iris, postura y formas para impulsar lienzos 2D/3D en el aire, Air Mouse, control por parpadeo y automatización en bandeja del sistema con modo Eco."
             }
         },
         contact: {

@@ -86,11 +86,10 @@ const projects: Project[] = [
     {
         title: "Actions By Signs",
         descriptionKey: "actions-by-signs" as const,
-        description: "Real-time Computer Vision and AI gesture engine turning standard webcams into touchless interfaces. Detects dual hands, eye gaze, body posture, and geometric shapes simultaneously, mapping stable visual signs to configurable system actions.",
-        stack: ["Python", "OpenCV", "MediaPipe", "NumPy", "uv"],
+        description: "Real-time Computer Vision & HCI engine turning standard webcams into touchless desktop interfaces. Combines dual-hand, face/iris, posture, and shape tracking to power 2D/3D air canvases, Air Mouse & blink control, and System Tray automation with Eco throttling.",
+        stack: ["Python 3.11", "OpenCV 5.1", "MediaPipe", "NumPy", "pytest"],
         link: "#",
-        isPrivate: true,
-        status: "Work in Progress"
+        isPrivate: true
     },
     {
         title: "VUELTA F1NAL",
