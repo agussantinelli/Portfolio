@@ -63,6 +63,14 @@ const projects: Project[] = [
         link: "https://github.com/agussantinelli/gitdata"
     },
     {
+        title: "Actions By Signs",
+        descriptionKey: "actions-by-signs" as const,
+        description: "Real-time Computer Vision & HCI engine turning standard webcams into touchless desktop interfaces. Combines dual-hand, face/iris, posture, and shape tracking to power 2D/3D air canvases, Air Mouse & blink control, and System Tray automation with Eco throttling.",
+        stack: ["Python 3.11", "OpenCV 5.1", "MediaPipe", "NumPy", "pytest"],
+        link: "#",
+        isPrivate: true
+    },
+    {
         title: "BuyJugador",
         descriptionKey: "buyjugador" as const,
         description: "Comprehensive retail management system for the gaming sector. Synchronizes inventory and sales across Blazor WASM and WinForms using Repository and Unit of Work patterns.",
@@ -84,12 +92,13 @@ const projects: Project[] = [
         link: "https://github.com/martin-ratti/TP-Ahorcado"
     },
     {
-        title: "Actions By Signs",
-        descriptionKey: "actions-by-signs" as const,
-        description: "Real-time Computer Vision & HCI engine turning standard webcams into touchless desktop interfaces. Combines dual-hand, face/iris, posture, and shape tracking to power 2D/3D air canvases, Air Mouse & blink control, and System Tray automation with Eco throttling.",
+        title: "Data By Frames",
+        descriptionKey: "data-by-frames" as const,
+        description: "Real-time Computer Vision & AI engine analyzing live screen capture and video streams to track multiple objects with persistent IDs. Extracts quantitative analytics for urban traffic and sports scenes, including speed estimation, team classification, and 2D homography minimaps.",
         stack: ["Python 3.11", "OpenCV 5.1", "MediaPipe", "NumPy", "pytest"],
         link: "#",
-        isPrivate: true
+        isPrivate: true,
+        status: "Work in Progress"
     },
     {
         title: "VUELTA F1NAL",
@@ -122,15 +131,6 @@ const projects: Project[] = [
         description: "High-end academic management system engineered with .NET MAUI. Automates complex grade calculations and performance tracking, transforming academic data into intuitive visual insights with local SQLite persistence.",
         stack: [".NET MAUI", "C#", "EF Core", "SQL Server"],
         link: "https://github.com/agussantinelli/GradeSync-Desktop",
-        status: "Work in Progress"
-    },
-    {
-        title: "Data By Frames",
-        descriptionKey: "data-by-frames" as const,
-        description: "Real-time Computer Vision & AI engine analyzing live screen capture and video streams to track multiple objects with persistent IDs. Extracts quantitative analytics for urban traffic and sports scenes, including speed estimation, team classification, and 2D homography minimaps.",
-        stack: ["Python 3.11", "OpenCV 5.1", "MediaPipe", "NumPy", "pytest"],
-        link: "#",
-        isPrivate: true,
         status: "Work in Progress"
     }
 ];
