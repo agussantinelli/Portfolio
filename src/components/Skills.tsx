@@ -44,6 +44,10 @@ const skills = [
     {
         category: 'Agile & Workflows',
         items: ['Kanban', 'Semantic Commits', 'Role Rotation', 'CI/CD pipelines']
+    },
+    {
+        category: 'Computer Vision & AI',
+        items: ['OpenCV', 'MediaPipe']
     }
 ];
 
