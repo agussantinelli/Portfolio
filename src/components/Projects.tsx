@@ -258,7 +258,7 @@ export default function Projects() {
                                 </motion.div>
                             </Box>
 
-                                {/* 3-3-2-2-3-2 Layout */ }
+                            {/* 3-3-2-2-3-2 Layout */}
                             {(index === 2 || index === 5 || index === 7 || index === 9 || index === 12) && (
                                 <Box sx={{ flexBasis: '100%', height: 0, display: { xs: 'none', md: 'block' } }} />
                             )}
